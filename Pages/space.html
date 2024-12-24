@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space News | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a class="onpage" href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Space News Section -->
+
+    <div class="container global-heading">
+        <h2 class="special-heading">Space News</h2>
+        <p>Discover exciting world events about space news</p>
+    </div>
+    
+    <section id="global" class="global space">
+        <div class="global-container space-container">
+            <div class="global-timeline space-timeline">
+                <div class="global-content space-content">
+                    <a href="#one" onclick="showBox(0)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space01.png" alt="">
+                        <div class="space-info global-info">
+                            <p>The Space Launch System NASA rocket</p>
+                        </div>
+                    </div></a>
+                    <a href="#two" onclick="showBox(1)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space02.png" alt="">
+                        <div class="space-info global-info">
+                            <p>Watch Rocket Lab return to flight with satellite launch tonight</p>
+                        </div>
+                    </div></a>
+                    <a href="#three" onclick="showBox(2)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space03.png" alt="">
+                        <div class="space-info global-info">
+                            <p>Boeing’s Quantum Leap: Satellites in Record Time</p>
+                        </div>
+                    </div></a>
+                    <a href="#four" onclick="showBox(3)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space04.png" alt="">
+                        <div class="space-info global-info">
+                            <p>NASA concerned Starship problems will delay Artemis 3</p>
+                        </div>
+                    </div></a>
+                    <a href="#five" onclick="showBox(4)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space05.jpg" alt="">
+                        <div class="space-info global-info">
+                            <p>Digging Deeper to Find Life on Ocean Worlds</p>
+                        </div>
+                    </div></a>
+                    <a href="#six" onclick="showBox(5)">
+                    <div class="global-card space-card">
+                        <img src="../Media/Space06.png" alt="">
+                        <div class="space-info global-info">
+                            <p>Our universe's smallest galaxies hold the largest star factories</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Space News Section -->
+
+    <!-- Start News Details Section -->
+    
+    <section class="details-section">
+        <div class="container">
+            <div class="news-details">
+                <div id="one" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space01.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>The Space Launch System rocket and its two solid rocket boosters are coming together.</h3>
+                        <p>
+                            The giant rocket that will launch humanity's next crewed moon mission is coming together across the southern United States.
+                        </p>
+                        <p>
+                            NASA plans to launch its Artemis 2 mission, which will send four astronauts around the moon, in late 2024. As the crew gets deep into their training, the hardware that will carry them to space — the Orion capsule and giant Space Launch System (SLS) rocket — is being readied at different NASA centers.
+                        </p>
+                        <p>
+                            For example, parts of the two solid rocket boosters that will be strapped to the SLS core stage are being processed at NASA's Kennedy Space Center (KSC) in Florida, the site from which Artemis 2 will launch.
+                        </p>
+                        <p>
+                            And in late November, engineers at KSC processed the right forward center segment of the SLS, NASA announced on Dec. 8. "The team has been inspecting each segment one-by-one, and lifting them to a vertical position to ensure the solid propellant and segment are ready for integration and launch," officials wrote. 
+                        </p>
+                        <p>
+                            There are 10 segments to examine. After these pieces have been approved, they will be driven over to KSC's Vehicle Assembly Building (VAB) to meet up with the mobile launcher that supports SLS at the pad. In the VAB, the massive rocket will then be put together for the Artemis 2 launch, which will be the first lunar liftoff with humans on board in 52 years.
+
+                            Related: 1 year after Artemis 1 launch, NASA readies Artemis 2 to shoot for the moon again (video) 
+                        <p>
+                            Meanwhile, at NASA's Marshall Space Flight Center in Huntsville, Alabama, team members worked on a key piece that will support the Artemis 2 Orion spacecraft. Technicians rotated the stage adapter, which will connect Orion to the SLS upper stage (known as the interim cryogenic propulsion stage, or ICPS).
+
+                            "The installation Nov. 30 marks one of the final steps for the adapter before it is readied for shipment to Kennedy via NASA's Super Guppy cargo aircraft," NASA officials wrote in a separate release on Monday (Dec. 11). 
+
+                            The adapter also bears the autographs of the four crew members, who visited in November: NASA commander Reid Wiseman, NASA pilot Victor Glover (who will become the first Black person to leave low Earth orbit, or LEO), NASA mission specialist Christina Koch (who will be the first woman to go beyond LEO) and Canadian Space Agency astronaut Jeremy Hansen (the first non-American to do so).
+                        </p>
+                        <p>
+                            In recent weeks, NASA has also released milestones for other key hardware for the mission. The Orion spacecraft finished its first power-on test at KSC, while the core stage of the SLS now has all four engines on board at its facility at Michoud.
+                        </p>
+                        <p>
+                            The mobile launcher is undergoing months of tests, including spectacular water deluge testing that is key to protecting the structure from the forces of the powerful launch.
+                        </p>
+                        <p>
+                            Artemis 2's crew continues its 18 months of training, in which the astronauts are formulating procedures as they go, to make way for future Artemis program missions. The following mission, Artemis 3, is officially set for 2025 or 2026 but will likely push to 2027, a recent Government Accountability Office (GAO) report said. NASA is still awaiting key landing elements such as SpaceX's giant new Starship vehicle (which has yet to complete a space mission) and spacesuits for the lunar surface.
+                        </p>
+                        <span class="sub-description">By Marnie Hunter, Trojan X</span>
+                        <span class="sub-description">Updated 11:06 AM EST, Mon December 18, 2023</span>
+                    </div>
+                </div>
+
+                <div id="two" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space02.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Watch Rocket Lab return to flight with satellite launch tonight</h3>
+                        <p>
+                            Rocket Lab aims to bounce back tonight (Dec. 14) from a launch failure.
+                        </p>
+                        <p>
+                            The company's Electron rocket is scheduled to lift off from New Zealand during a two-hour window that opens tonight at 11 p.m. EST (0400 GMT and 5 p.m. New Zealand time on Dec. 15), carrying a satellite for the Japanese Earth-imaging company iQPS to orbit.
+                        </p>
+                        <p>
+                            You can watch the launch live here at Space.com courtesy of Rocket Lab, or directly via the company. Coverage is expected to begin 20 minutes before the launch window opens.
+                        </p>
+                        <p>
+                            It will be Rocket Lab's first launch since Sept. 19. Electron suffered an anomaly about 2.5 minutes into flight that day, resulting in the loss of one of San Francisco company Capella Space's Earth-observing satellites.
+                        </p>
+                        <p>
+                            Rocket Lab soon traced the problem to an unwanted "electrical arc," which shorted out the battery packs that provide power to the 59-foot-tall (18 meters) Electron's second stage. The company says it has implemented multiple corrective measures, including an enhanced testing regime here on Earth, to ensure the problem doesn't crop up again.
+                        </p>
+                        <p>
+                            Tonight's mission, which Rocket Lab calls "The Moon God Awakens," will deliver iQPS' QPS-SAR-5 satellite to a circular orbit 357 miles (575 kilometers) above Earth, where it will join the QPS-SAR-6 craft. (QPS-SAR-5 is named Tsukoyomi-1 after the Japanese god of the moon, which explains Rocket Lab's mission moniker.)
+                        </p>
+                        <p>
+                            "iQPS’s satellites are small, high-performance SAR [synthetic aperture radar] satellites that use a lightweight, large, stowable antenna to collect high-resolution images of Earth, even through clouds and adverse weather conditions," Rocket Lab wrote in a mission description. "Ultimately, the iQPS constellation is planned to have 36 satellites capable of monitoring specific fixed points on Earth every 10 minutes."
+                        </p>
+                        <p>
+                            Tonight's launch will be the 42nd to date for the Electron, which gives small satellites dedicated rides to Earth orbit and beyond. (An Electron launched the CAPSTONE cubesat toward the moon in June 2022, and Rocket Lab aims to launch a private life-hunting mission to Venus in 2024.)
+                        </p>
+                        <p>
+                            Before September's anomaly, the most recent Rocket Lab mishap occurred in May 2021, when an Electron suffered a problem with its second stage.
+                        </p>
+                        <hr>
+                        <h3>Will Amazon Become SpaceX's Biggest Customer?</h3>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub01.jpg" alt="">
+                        </div>
+                        <p>
+                            It's been just under 20 months now since Amazon.com (NASDAQ: AMZN) announced the single biggest space launching campaign in history: A project to contract 93 separate rocket launches from a total of four separate rocket launch providers to put its Project Kuiper satellite constellation in orbit.
+                        </p>
+                        <p>
+                            (Note for SpaceX fans: Yes, it's true that SpaceX has launched more rocket missions dedicated to its own Starlink satellites -- a total of 126 such launches, in fact. But SpaceX didn't actually announce how many launches it would be making).
+                        </p>
+                        <h3>A curious decision</h3>
+                        <p>
+                            This was a curious decision, to say the least, given that SpaceX was then and still is today the world's biggest rocket launch company -- and also the cheapest to launch with. In August 2023, Amazon actually found itself on the wrong side of a lawsuit by one of its shareholders. The Cleveland Bakers and Teamsters Pension Fund alleged that Amazon "acted in bad faith," yielding to "conflicts of interest," and as a result, overpaid for its launch contracts by "hundreds of millions of dollars" by refusing to work with SpaceX on Project Kuiper.
+                        </p>
+                        <p>
+                            At last report, this lawsuit was still working its way through the courts. But as we've just learned, Amazon may be taking steps to defang the plaintiff's lawyers and minimize the fallout of its 2022 decision.
+                            On Dec. 1, 2023, Amazon announced that it would be buying some rocket rides from SpaceX after all.
+                        </p>
+                        <h3>Curiouser and curiouser</h3>
+                        <p>
+                            Specifically, the AboutAmazon.com blog stated that Amazon has contracted with SpaceX "to support deployment plans for Project Kuiper" by launching three Falcon 9 rockets beginning in mid-2025, supplementing the "earlier procurement of 77 heavy-lift rockets from Arianespace, Blue Origin, and United Launch Alliance (ULA)."
+                        </p>
+                        <p>
+                            Now, even this brief blog post from Amazon contains several things worth highlighting:
+                        </p>
+                        <p>
+                            First and most obvious is the fact that Amazon has performed an about-face on SpaceX. Whether this was a tactical decision to defend itself against the Cleveland Bakers and Teamsters Pension Fund lawsuit or simply an economic decision to buy some cheap rocket rides from the lowest-cost rocket launcher on Earth remains to be seen. Either way, it means Amazon will be paying at least a couple hundred million dollars to SpaceX, which is likely to be its biggest rival in satellite internet in the future.
+                        </p>
+                        <p>
+                            Second, note that Amazon's latest announcement references "77" as the original number of rocket launches purchased rather than 92. The reason is that, back in April 2022, Amazon said that 15 of the 92 launches it was planning were optioned "additional launches" with Blue Origin -- and thus, launches that might or might not actually be needed. So it looks like the three SpaceX launches just announced are coming out of Blue Origin's share of the April 2022 mega-contract.
+                        </p>
+                        <p>
+                            And if this is the case, then potentially, even more launch contracts might be awarded to SpaceX at Blue Origin's expense. As many as all 15 "additional launches?" Perhaps. And if that's the case, then at $67 million per launch, Amazon just might be willing to deposit as much as $1 billion in the bank account of its primary space competitor as the price of getting its own service in orbit as fast as possible.
+                        </p>
+                        <p>
+                            Third, finally, and most important of all for Amazon.com investors, Amazon stated that it intends to begin launching satellites en masse "beginning in the first half of 2024, and we expect to have enough satellites deployed to begin early customer pilots in the second half of 2024."
+                        </p>
+
+                        <span class="sub-description">By Ben McKechnie, Trojan X</span>
+                        <span class="sub-description">13th December 2023</span>
+                    </div>
+                </div>
+
+                <div id="three" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space03.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Boeing’s Quantum Leap: Satellites in Record Time, Boosting National Security and Commercial Connectivity</h3>
+                        <p>
+                            In 1963, Boeing heritage company Hughes Space and Communications launched into orbit a 78-pound satellite called Syncom that could receive signals from Earth and send those signals back down to different spots around the globe. That first communications satellite was built in the same El Segundo, California, facility where the Nash Rambler was built in the 1950s and where Boeing today produces satellites for commercial customers like SES and Viasat, as well as the U.S. Department of Defense (DoD). Syncom production was a ground-breaking effort that incorporated cutting edge technology of the day. Building the spacecraft took several years.
+                        </p>
+                        <p>
+                            Since then, Boeing—which acquired Hughes in 2000—has been delivering satellites on faster and faster timelines; production is now tallied in months, not years. But earlier this year, when Millennium Space Systems, a Boeing Company, delivered a satellite for U.S. Space Systems Command’s Space Safari Program Office in an astounding eight months, the industry took note.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub02.jpg" alt="">
+                        </div>
+                        <p>
+                            “We moved fast on VICTUS NOX by taking a vehicle off our production line that was about 65 percent complete and modifying it for the mission in eight months,” said Jason Kim, CEO of Millennium Space Systems, the Boeing subsidiary responsible for manufacturing the vehicle. “That’s not normal; the timelines are insane.” Kim said the exercise with VICTUS NOX—Latin for “conquer the night”—demonstrates the ability to tactically deploy a small satellite into orbit in record speed, a critical response if U.S. satellites are shot down or rendered inoperable in a military conflict. The satellite launched on September 14, 2023 and was operational 37 hours later, instead of weeks or months. This new record for operational readiness came after completing near back-to-back 58-hour activation and 24-hour launch phases.
+                        </p>
+                        <p>
+                            “It’s the nation’s way to show everyone in the world that the U.S. Space Force can move really fast to meet an urgent need or augment a need,” Kim said. “Once it was on orbit we checked out the vehicle in hours, not weeks.” Every step of the VICTUS NOX mission is about moving extremely fast, even for Millennium—a company known for delivering operational small satellites at remarkable speed.
+                        </p>
+                        <p>
+                            “When you get a production line going, you can deliver small satellites in a very quick assembly line fashion,” Kim said. “We continue to disrupt the timelines in delivering systems. Reducing the time is what drives all our people here. We have a culture of moving with speed and calculated risk.”
+                        </p>
+                        <p>
+                            Kim said lessons learned with VICTUS NOX will be applied to other programs. “If we can do something fast, why not try to do that on more of our vehicles,” he said, noting that speed is not only good for staying ahead of military threats but also for any customer wanting to quickly generate data to make better informed decisions.
+                        </p>
+                        <p>
+                            Boeing is ramping up to build satellites of all sizes and also is building a systemic infrastructure in which larger, more powerful satellites are much more capable and resilient. That, paired with a rich history of state-of-the-art technology and the legacy of Millennium’s rapid delivery of operational small satellites, is driving the next generation of satellite constellations. Among the most exciting new Boeing satellites is WGS-11, the latest version of the Wideband Global SATCOM satellite system, with more than double the capability of its predecessors.
+                        </p>
+                        <p>
+                            For all satellite customers: “Faster, more mission-relevant solutions”
+                        </p>
+                        <p>
+                            As one of the few companies in the world that offers satellite products to both commercial and national security customers, Boeing is uniquely situated to solve the problems of any satellite user in space.
+                        </p>
+                        <p>
+                            “Customers turn to us because we’re not just solving today’s challenges; we’re anticipating the problems of tomorrow. Our new Space Mission Systems organization is dedicated to rapidly responding to our customers’ needs,” said Michelle Parker, vice president of Space Mission Systems at Boeing Defense, Space & Security.
+                        </p>
+                        <p>
+                            “Our integrated portfolio, consolidated in 2022, spans multiple sectors of aerospace technology, allowing us to draw from a diverse range of innovations, even those outside traditional space programs, to deliver faster, more mission-relevant solutions.”
+                        </p>
+                        <p>
+                            Boeing’s Space Mission Systems portfolio includes government and commercial satellite systems, as well as subsidiaries Millennium Space Systems and Spectrolab. “The beauty of our approach is that technology developed in our commercial organization benefits government programs, and vice versa. This flexibility means customers can mix and match orbits and satellites according to their unique requirements, and even have the opportunity to serve government missions,” Parker added.
+                        </p>
+                        <p>
+                            Throughout its 60-year history in satellite production, Boeing has led the way as spacecraft increased in size through the 1980s and ‘90s and then as they shrank and became more capable; as they advanced from largely hardware systems to mostly software systems that include high-speed computers; and as we have moved into a world transformed by Big Data.
+                        </p>
+                        <p>
+                            “It’s a long legacy that stretches pretty far back,” said Bryan “Stu” Eberhardt, director of Business Development for Space Mission Systems at Boeing, who likes to show visitors the El Segundo factory’s hall of flags—with flags from 44 countries that have bought Boeing satellites—as a reminder that space activity is international. “Satellite communication has been one of the areas we’ve never gotten away from. We have been on the cutting edge ever since Syncom, and we’ve been a provider of tactical satcom for the last couple decades.”
+                        </p>
+                        <p>
+                            Through the years, customer demands have changed drastically: Today, both commercial and government users need to move an exponentially larger amount of data for their own customers and users—whether it’s for ATMs, credit cards, weather apps, video streaming or, critically, communications for the warfighter. These users all need to know that their communications and data streams won’t be interrupted by interference or electronic warfare attacks from an adversary. Commercial customers are concerned with revenue generation; government customers are dealing with life and death. But at the end of the day, all customers want quickly built satellites with increased capability, flexibility, performance and uninterrupted signals.
+                        </p>
+                        <p>
+                            Whether warfighters are trying to get real-time high definition reconnaissance video as they move into harm’s way, or first responders need to connect with other humanitarian workers after a hurricane, satellite communication is vital. Anytime, anywhere assured communications means vital connectivity is going to be there, whether an adversary is trying to jam you, or ground infrastructure is wiped out, said Rico Attanasio, director of Boeing’s Tactical Military SATCOM programs. “Our job is to deliver the systems that our servicemen and women can be confident will connect them with the resources they need in the most stressing environments,” he said.
+                        </p>
+                        <p>
+                            Boeing Phantom Works executive director Gil “Waco” Griffin said that with so much technology shared between commercial and government customers, the lines between those users are blurring. “Listening to the needs of our customers and policy-makers, we’re seeing a need to have capabilities more synchronized,” he said. At the same time, Boeing’s vision for a strong and effective space order of battle revolves around ensuring the availability of vital services and capabilities that give the U.S. a competitive edge in warfighting through different situations like competition, crises, and conflicts.
+                        </p>
+                        <div class="description-video">
+                            <video src="../Media/Space-video01.mp4" autoplay muted loop></video>
+                        </div>
+                        <p>
+                            “One of the missions of the Department of Defense has always been to protect what’s important to us, especially in trade and commerce,” Eberhardt said. “Protecting commercial space systems is akin to protecting our trade routes in the open ocean, which led to the establishment of the Navy. DoD has recognized our reliance on space systems in daily life and said we need to continue to protect those systems and those assets. What we’re working on here at Boeing is how do we go about doing that.”
+                        </p>
+                        <h3>‘Flying a super computer in Space’</h3>
+                        <p>
+                            WGS-11, with its integrated payload array, software-defined network and anti-jam capabilities, sets a new bar for the government and warfighters,” Parker said. “Our customers are very excited about that capability.”
+                        </p>
+                        <p>
+                            WGS is a constellation of communication satellites in geostationary orbit developed by Boeing to meet DoD needs and give the U.S. warfighter a competitive edge on the battlefield. The first 10 WGS satellites, starting with the first launch in 2007, serve as the backbone for the bulk of defense communications. With each new generation of WGS satellites, Boeing has leveraged state-of-the-art commercial technology, increased capability and decreased cost. The bandwidth, for instance, doubled between WGS-7 and WGS-8. But those improvements pale in comparison to the latest advances, said Eberhardt. The jump from WGS-10 to WGS-11, he said, is extraordinary. “It’s an evolutionary move, but in terms of data, it’s revolutionary. We say it’s twice the capability of WGS-10, but in some cases, it’s 10 times as much.”
+                        </p>
+                        <p>
+                            WGS-11, which will be operated by the U.S. Space Force, will provide more than double the capability of its predecessors: more coverage beams, more beam-formed bandwidth and more frequency re-use than earlier systems. It will be able to move thousands of footprints of data, will incorporate a higher level of cybersecurity, will better protect the signal from jamming in a contested environment and will offer a flexible software defined payload. “We went from a digital backbone to a full digital system,” Eberhardt said, “really flying a super computer in space.”
+                        </p>
+                        <p>
+                            Eberhardt, who served in the U.S. Air Force, said he has a deep understanding of what the warfighter needs in a difficult situation. “It’s tough to know what you need to do next,” he said. “You’re fighting in a complex environment that demands much more data, movement of data and protected voice and data communications. All of that in the most challenging of contested environments for decision makers.” Machine-to-machine communication will enable warfighters to make decisions with good information, he said. But that communication must protect data so it can’t be intercepted and jammed. “The more robust you can make the transfer of that data and information, and the more you can get it to the right place in a timely manner, the more you’ll help the warfighter.”
+                        </p>
+                        <p>
+                            Attanasio, who manages a wide program portfolio that provides assured, secure and protected communications to the U.S. military, including WGS and PTS (Protected Tactical SATCOM), said Boeing has been working with the Space Force on rapid prototyping for the last four years. One of the questions that drives his team: “How do we leverage our best commercial technology and modify it for military use?” One way: the integrated payload array (IPA), adapted from Boeing’s commercial 702X satcom design. “We leveraged both the technology and the manufacturing processes to develop and deliver WGS-11 and PTS,” said Attanasio, “the IPA is digitally engineered and manufactured on an automated production line, and we additively manufacture most of the antennas.” Unlike the analog payloads of the ‘80s and ‘90s with fixed and unchangeable coverage areas, the digital payload offers flexibility and protection. The customer can electronically and simultaneously steer thousands of individual beams in real-time, from different orbital slots, providing users with the tools to have anytime, anywhere communication in contested environments. Each individual beam is shapeable and can be uniquely tailored to any operation, enabling increased mission flexibility and responsiveness. Narrower beam widths with dual polarization unique to WGS-11 help prevent jamming and interference while allowing greater frequency reuse. Boeing is also working to enable transmission of the government’s protected tactical waveform across legacy and future SATCOM systems, which will further secure the government’s satellite communication.
+                        </p>
+                        <p>
+                            “With WGS 11 and 12, we’ll be putting all this onboard software capability and processing power into space,” Eberhardt said. “When we start adding these things together—beam-shaping, frequency-hopping waveform and ability to defeat jammers—it’s powerful. We know that these systems work.”
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub03.jpg" alt="">
+                        </div>
+                        <p>
+                            Boeing is also delivering technology that allows for prototypes and experimental systems to push the boundaries of what’s possible in space. “WGS is a large spacecraft and it will need a certain class of launch vehicle,” said Griffin. “You could pay to just launch a single satellite or you could launch that and other space vehicles as co-passengers. The whole intent is to get more things in space on a single launch, which is good for the government and good for taxpayers.” Boeing has taken the ESPA (Evolved Expendable Launch Vehicle Secondary Payload Adapter) ring to the next level with the Boeing Adaptable Ring. The BAR, as it’s known, has six ports for carrying more vehicles on each launch, with multiple size options and a modular design that increases flexibility. Each of the six ports can accommodate 330 kilograms of payload mass. This is just one example of Boeing being disruptive “in a good way,” Griffin said. “We want to continually disrupt ourselves. We want to create the best technologies we can that turn into superb capabilities for the government and warfighters.
+                        </p>
+                        <p>
+                            When it joins the existing constellation of WGS satellites, WGS-11 will substantially increase throughput capacity of essential assured communication services for the U.S. government and its allies, and give combatant commanders a critical asset to rely on when they need it most. Boeing is currently in the middle of production of WGS-11 and will be assembling much of it by early next year.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub04.jpg" alt="">
+                        </div>
+                        <h3>Faster, leaner, cheaper</h3>
+                        <p>
+                            Two years ago, anticipating future demand, Millennium began setting up a small satellite factory within the footprint of Boeing’s historic El Segundo factory. The Small Sat Factory, Powered by Millennium, officially opened in July.
+                        </p>
+                        <p>
+                            “Customers are asking for constellations in low Earth orbit, medium Earth orbit and geosynchronous orbit,” said Kim, stressing the current high demand. “Our customers need these constellations on orbit now. These threats are advancing at a very fast rate, and our national security space customers want to stay ahead of that threat.”
+                        </p>
+                        <p>
+                            Millennium’s culture of speed enabled the rapid standup of the Small Sat Factory in less than two years.  Millennium also adopted best practices from Boeing to include Digital Engineering and Additive manufacturing—using facilities, tools and suppliers that Boeing has already developed—means working more efficiently and with fewer supply chain delays. For example, Boeing Additive Manufacturing (BAM) can print satellite panels in less than a month, shaving five months off the conventional process of processing honeycomb panels.
+                        </p>
+                        <p>
+                            “Integrating Millennium’s rapid-prototyping culture with Boeing’s extensive aerospace expertise has been a game changer in our approach to satellite technology,” said Parker. “The agility we’ve gained enables us to move swiftly, iterating on designs and delivering solutions in unprecedented timeframes, offering a blend of speed and precision that sets a new industry standard.”
+                        </p>
+                        <p>
+                            Millennium is 80 percent vertically integrated, building just about everything that goes into the spacecraft, including computers, radios, actuators and star trackers; solar cells come from sister subsidiary Spectrolab. Kim explained that vertical integration allows Millennium to mix and match different components like Lego blocks, customizing satellites for each mission and orbit in rapid timelines.
+                        </p>
+                        <p>
+                            In the future, Boeing advances will enable network self-healing, the process by which a system recognizes a link has been jammed and switches that line over to another satellite, regardless of its orbit. “The software-defined network knows I don’t have that original path anymore but I do have another path to get the data where it needs to go,” said Eberhardt, adding that the “secret sauce” is in the software.
+                        </p>
+                        <p>
+                            “Boeing technology will enable satellites with different missions, in different orbits, to talk to each other,” Attanasio said. The next generation of automation will also allow the systems to set up beam-shaping that enables a user to recognize communications is needed for troops setting up a base or an aircraft coming in. This machine-to-machine interface, Attanasio said, is what excites him most about the future of satellite communication. “These systems are highly capable,” he said. “These are things we’re talking to our customers about, things that are on the horizon.”
+                        </p>
+                        <span class="sub-description">By Marnie Hunter, Trojan X</span>
+                        <span class="sub-description">Published 5:26 PM EST, Fri December 15, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="four" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space04.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>NASA concerned Starship problems will delay Artemis 3</h3>
+                        <p>
+                            WASHINGTON — NASA has growing concerns that the lunar lander version of SpaceX’s Starship vehicle will not be ready in time for the Artemis 3 mission in late 2025, given the amount of work needed to get the vehicle ready.
+                        </p>
+                        <p>
+                            Speaking at a joint meeting of the National Academies’ Aeronautics and Space Engineering Board and Space Studies Board June 7, Jim Free, NASA associate administrator for exploration systems development, said Artemis 3, which would feature the first human landing on the moon in more than half a century, was in danger of being delayed from December 2025 to some time in 2026.
+                        </p>
+                        <p>
+                            Free said NASA’s concern is the number of launches of Starship that SpaceX has to carry out to be ready for Artemis 3. Each Starship lander mission requires launching the Starship lander itself as well as several “tanker” Starships to fuel the lander in Earth orbit before it goes to the moon. Before Artemis 3, SpaceX will carry out an uncrewed Starship lunar landing, and also must demonstrate cryogenic fluid transfer in Earth orbit.
+                        </p>
+                        <p>
+                            “That’s a lot of launches to get those missions done,” Free said. “They have a significant number of launches to go, and that, of course, gives me concern about the December of 2025 date” for Artemis 3.
+                        </p>
+                        <p>
+                            He reiterated those schedule concerns later in the meeting when asked about the schedule for Artemis 3. “With the difficulties that SpaceX has had, I think that’s really concerning,” he said. “You can think about that slipping probably into ’26.”
+                        </p>
+                        <p>
+                            He didn’t elaborate on the “difficulties” that SpaceX has encountered, but the company’s Starship/Super Heavy launch vehicle is currently grounded after its first integrated launch April 20. The vehicle suffered several engine failures in flight and was destroyed by its flight termination system four minutes after liftoff.
+                        </p>
+                        <p>
+                            NASA has personnel involved in the investigation of the launch, and Free said he had just met with a Federal Aviation Administration official about it. “They’re doing everything they can, but they look at the launch license for the next mission,” he said of the FAA. “What I tried to convey to him is our big picture of everything that’s going to take to get to that human lander.”
+                        </p>
+                        <p>
+                            Neither the FAA nor SpaceX has provided public updates on the status of that investigation or when the company might be cleared to make another launch attempt. SpaceX Chief Executive Elon Musk said in an April 29 online discussion that the company could be ready in as soon as a “couple months,” but that schedule appears unlikely based on visible progress at the company’s Starbase test site in Boca Chica, Texas.
+                        </p>
+                        <p>
+                            Regarding development of the lunar lander version of Starship, Free said that SpaceX and NASA have delayed a critical design review of the vehicle until after the company performs a cryogenic refueling demonstration in Earth orbit. The company provided NASA with an updated schedule last week, details of which he did not disclose, that the agency is reviewing.
+                        </p>
+                        <p>
+                            “I get a lot of questions, ‘Will you make the date?’ Well, they need to get flying before we can get any kind of assessment,” he concluded.
+                        </p>
+                        <p>
+                            He said he was confident that SpaceX would ultimately deliver the Starship lander, and noted that the fixed-price structure of the Human Landing System award shields NASA from additional costs. “But, the fact is, if they’re not flying on the time they’ve said, it does us no good to have a firm fixed price contract other than we’re not paying more.”
+                        </p>
+
+                        <span class="sub-description">By Stella Shon, Trojan X</span>
+                        <span class="sub-description">Updated on December 15, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="five" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space05.jpg">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Digging Deeper to Find Life on Ocean Worlds</h3>
+                        <p>
+                            In February 2023, researchers from around the country gathered at a NASA-sponsored workshop to discuss the latest developments and a roadmap for a cryobot mission concept to drill through the icy crusts of Europa and Enceladus and search for life.
+                        </p>
+                        <p>
+                            “Follow the water” has been the mantra of the astrobiology community in search of alien life in the universe. Water is a fundamental building block of all terrestrial life as we know it and—as discovered by various space missions—water is abundant throughout the solar system, and perhaps, the universe. Ancient eroded features on Mars show clear evidence of a wet history, and the ongoing quest of the Perseverance rover aims to uncover clues as to whether or not Mars once hosted a population of microbes. However, there is only so much we can learn from the fossil record. To truly understand the nature of possible alien life, we must directly investigate the source—the liquid water.
+                        </p>
+                        <p>
+                            Enter “Ocean Worlds.” Over the past two decades, scientists have discovered that a vast number of icy moons orbit the outer giant planets in our solar system. Many of these moons show strong evidence for harboring global oceans beneath their icy crusts.  In fact, these moons likely have far more liquid water than all of Earth’s oceans combined, and some may even have the right conditions to foster life. Two moons, in particular, have captured the imaginations of astrobiologists due to their amenable conditions for life and their relative ease of interrogation: Jupiter’s moon, Europa and Saturn’s moon, Enceladus. Both show strong evidence of a global subsurface ocean beneath a kilometers-thick water-ice crust—but how can we access this liquid water?
+                        </p>
+                        <p>
+                            Various concepts for ocean access have been investigated over the past decades, ranging from robots that descend through crevasses to drills of varying types. One concept that has emerged as a leading candidate is the cryobot. A cryobot is a self-contained cylindrical probe that uses heat to melt the ice beneath it. The melted water then flows around the probe before refreezing behind it. Thermal ice drilling is so simple and effective that it has become a common tool for studying terrestrial glaciers and ice sheets. But how can we translate this technology to a system that can penetrate planetary icy crusts, which are colder, thicker, and more uncertain?
+                        </p>
+                        <p>
+                            This dilemma has been a core focus of researchers—many of whom are supported by NASA’s Scientific Exploration Subsurface Access Mechanism for Europa (SESAME) and Concepts for Ocean worlds Life Detection Technology (COLDTech) programs—for the past several years. In February 2023, NASA’s Planetary Exploration Science Technology Office (PESTO) convened a workshop at the California Institute of Technology, which brought together nearly 40 top researchers from diverse fields and institutions around the country to discuss progress in maturing this technology and to assess the challenges that remain.  Recent studies have made significant progress in refining our understanding of the ice shell environment, detailing a mission architecture, and maturing critical subsystems and technologies. In particular, workshop participants identified four key subsystems that drive the roadmap for developing a flight-ready architecture: the power, thermal, mobility, and communication subsystems.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub05.png" alt="" width="100%">
+                        </div>
+                        <p>
+                            First, the heart of a cryobot is a nuclear power system that generates the sustained heat required to melt through kilometers of ice. Various nuclear power systems that could suit a cryobot system have been identified, including the familiar Radioisotope Power Systems (RPS) that have powered many deep-space missions, and fission reactors that may be developed in the coming years. Two key constraints that drive the power system design are: (1) sufficient total power and density to facilitate efficient melting (about 10 kW), and (2) integration within a structural vessel to protect the power system from the high pressures of the deep ocean. These challenges are both solvable and have some historical precedent: NASA’s Cassini mission had a 14 kW thermal power system, and several Radioisotope Thermoelectric Generators (RTGs) were deployed to the bottom of the ocean in the 1960s and 1970s as power sources for navigation beacons, which operated in comparable pressures to the Europan ocean. However, a cryobot power system will require a concerted effort and close collaboration with the Department of Energy throughout the maturation of the mission concept.
+                        </p>
+                        <p>
+                            Second, a thermal management system is required to manage the heat produced by the onboard nuclear power system, maintain safe internal temperatures, and distribute heat to the environment for efficient performance. This system requires two independent pumped fluid circuits: one that circulates an internal working fluid through channels embedded in the skin and another that circulates melted ice water with the surounding environment. Some of these technologies have been demonstrated at reduced and full scale, but more work is needed to validate performance at the range of ice conditions expected in the outer solar system.
+                        </p>
+                        <p>
+                            In addition, the icy shells of Europa and Enceladus will contain impurities such as dust and salt, which, when sufficiently concentrated, may require auxilliary systems to penetrate. A combination of “water jetting” and mechanical cutting has been demonstrated to be effective at clearing debris ranging from fine particulate to solid blocks of salt from beneath the probe. Some impurities such as larger rocks, voids, or water bodies may remain impenetrable, requiring the cryobot to incorporate a downward-looking mapping sensor and steering mechanism—both of which have been demonstrated in terrestrial prototypes, though not yet in an integrated system. High-priority future work includes a more rigorous and probabilistic definition of the icy environments to quantify the likelihood of potential mobility hazards, and an integrated demonstration of hazard mitigation systems on a flight-like cryobot system. Europa Clipper will also provide key observations to constrain the prevalence and characteristics of hazards for a cryobot.
+                        </p>
+                        <p>
+                            Finally, a cryobot mission requires a robust and redundant communication link through the ice shell to enable the lander to relay data to an orbiting relay asset or directly to Earth. Fiber optic cables are the industry standard for communicating with terrestrial melt probes and deep-sea vehicles, but require careful validation for deployment through ice shells, which are active. The movement of ice in these shells could break the cable. A team led by Dr. Kate Craft at the Johns Hopkins Applied Physics Laboratory has been investigating the propensity of tethers embedded in ice to break during ice-shear events, as well as methods to mitigate such breakage. While preliminary results from this study are highly encouraging, other teams are exploring wireless techniques for communicating through the ice, including radio frequency, acoustic, and magnetic transceivers.  These communication systems must be integrated onto the aft end of the probe and depoyed during its descent. Current projects funded under the NASA COLDTech program are taking the first steps toward addressing key risks for the communications system. Future work must validate performance across a broader range of conditions and demonstrate integration on a cryobot.
+                        </p>
+                        <p>
+                            While the power, thermal, mobility, and communication subsystems took center stage, workshop participants also discussed other key systems and technologies that will require maturation to enable a cryobot mission. These topics include an integrated instrument suite with accommodations for liquid sampling and outward-facing apertures, planetary protection and sterilization strategies, materials selection for corrosion mitigation, ice-anchoring mechanisms, and autonomy. However, none of these technologies were identified as major risks or challenges in the cryobot mission concept roadmap.
+                        </p>
+                        <p>
+                            Overall, the consensus finding of workshop participants was that this mission concept remains feasible, scientifically compelling, and the most plausible near-term way to directly search for life in situ on an ocean world. Continued support would allow scientists and engineers to make even further progress toward readying cryobots for future mission opportunities. The potential for the direct detection of life on another world seems more possible than ever.
+                        </p>
+                        <p>
+                            This research was carried out at the Jet Propulsion Laboratory, California Institute of Technology, under a contract with the National Aeronautics and Space Administration (80NM0018D0004).
+                        </p>
+                        
+                        <span class="sub-description">By Alison Fox, Trojan X</span>
+                        <span class="sub-description">Published on November 21, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="six" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Space06.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Our universe's smallest galaxies hold the largest star factories. Here's why</h3>
+                        <p>
+                            Some of the biggest, most intense regions of star formation are found in the smallest of galaxies, and scientists believe this is because stars reaching the ends of their lives in the so-called dwarf galaxies are more likely to turn into black holes than explode in supernovas. The contrast is large enough, the team says, that dwarf galaxies experience a 10-million-year delay in blowing all their star-forming material away, a process usually dependent on the forces of supernovas. 
+                        </p>
+                        <p>
+                            In other words, dwarf galaxies are able to hang onto their precious trove of star-forming molecular gas for longer, allowing star-forming regions to grow in size and intensity, and produce more stars. 
+                        </p>
+                        <p>
+                            Examples of such huge star-forming regions in local dwarf galaxies include 30 Doradus (the Tarantula Nebula) in the Large Magellanic Cloud, located just about 160,000 light-years away, and Markarian 71 in the galaxy NGC 2366, located about 10 million light years away.
+                        </p>
+                        <p>
+                            Star-forming regions can produce stars of all masses; they mostly yield smaller stars, but create a handful of massive stars, too. When these massive stars reach the end of their life after a few million years, their cores collapse to either form a neutron star or a stellar-mass black hole. In the former scenario, a star's outer layers rebound off the neutron star and explode as a supernova. In the latter case, however, almost an entire star falls into the resultant black hole with nary a whimper.
+                        </p>
+                        <p>
+                            "As stars go supernova, they pollute their environment by producing and releasing metals," Michelle Jecmen, who is an undergraduate researcher at the University of Michigan and lead author of the study, said in a statement.
+                        </p>
+                        <p>
+                            When the universe began, the Big Bang produced only the elements hydrogen and helium (with a smidgen of lithium). All the other elements came later, forged either within the bowels of stars or in the furnaces of their explosions. Astronomers call all those later elements "metals." These metals are now dispersed across the interstellar medium, finding their way into new star-forming regions and being incorporated into the next generation of stars. Although the details are not yet clear, the presence of specific metals within a star can subtly alter how that star evolves. For instance,  scientists believe high-metallicity stars are more likely to produce a neutron star and a powerful supernova.
+                        </p>
+                        <p>
+                            Importantly, the blasts from multiple supernova explosions create a "wind" that can blow out any remaining molecular gas — gas that's fertile for forming stars. 
+                        </p>
+                        <p>
+                            More massive and more evolved galaxies, such as our Milky Way, have produced a higher abundance of metals over the eons during which they've churned through countless generations of stars. However, smaller dwarf galaxies have historically exhibited less star formation and therefore have more primitive compositions with fewer metals. But once a star-forming region in a dwarf galaxy does get going, it would appear that its stars' lower metallicities means they're more likely to produce black holes rather than powerful supernova explosions. Therefore, it likely takes longer for the region to become enriched with metals and start producing stars that go supernova with powerful winds that blow out all the gas.
+                        </p>
+                        <p>
+                            "We argue that at low metallicity … there is a 10-million-year delay in the start of strong super-winds, which in turn results in higher star-formation," said Jecmen.
+                        </p>
+                        <p>
+                            "Michelle's finding offers a very nice explanation," Jecmen’s supervisor and co-author of the study, Michigan astronomer Sally Oey, said in the statement. "These galaxies have trouble stopping their star formation because they didn’t blow away their gas."
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Space-Sub06.jpg" alt="">
+                        </div>
+                        <p>
+                            Oey has led observations with the Hubble Space Telescope that found corroborating evidence for Jecmen’s model. Reporting on them in the Nov. 21 issue of The Astrophysical Journal Letters, Oey’s team targeted Markarian 71. Specifically, Oey was looking for triply ionized carbon. Atoms become ionized when they are struck by high-energy photons that can knock out an electron, leaving the atoms with a net positive charge. Triply ionized means an atom has lost three electrons.
+                        </p>
+                        <p>
+                            The Hubble observations found an abundance of triply ionized carbon near the center of Markarian 71. Such triply-ionized carbon forms when gas is cooling and radiative outflows that are removing energy from the gas interact with warmer gas. But these cooling outflows should not exist if there was a hot super-wind blowing, such as with the winds from multiple supernovas, and those winds  appear absent in Markarian 71.
+                        </p>
+                        <p>
+                            The findings also provide insights into star-forming conditions in the early universe's first galaxies , realms that existed just a few hundred million years after the Big Bang. Galaxies during this period, which is referred to as "Cosmic Dawn" were also small, but with intense star formation and low metallicity. When observed, they often display evidence of gas clouds clumping together and ultraviolet light shining through the gaps between the clumps. Astronomers describe this as the "picket fence" model, like light from a setting sun shining through gaps in a garden fence.
+                        </p>
+                        <p>
+                            A 10-million-year delay in the rise of supernova winds would explain why the gas in early galaxies has time to form such large clumps. "Looking at low-metallicity dwarf galaxies with lots of ultraviolet radiation is somewhat similar to looking all the way back to the cosmic dawn," said Jecmen.
+                        </p>
+                        <p>
+                            It’s neat to consider that to learn things about the first galaxies, we don’t always need a $10 billion space telescope, but can rather just look at some of our diminutive neighbors.
+                        </p>
+                        <span class="sub-description">By Alison Fox, Trojan X</span>
+                        <span class="sub-description">Published on November 21, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End News Details Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                SpaceX yet to select launch pad for next Axiom Space private astronaut mission
+            </li>
+            <li>
+                Rocket Lab aims to bounce back tonight (Dec. 14) from a launch failure
+            </li>
+            <li>
+                In February 2023, researchers from around the country gathered at a NASA-sponsored workshop to discuss the latest developments and a roadmap for a cryobot mission concept to drill through the icy crusts of Europa and Enceladus and search for life
+            </li>
+            <li>
+                WASHINGTON — NASA has growing concerns that the lunar lander version of SpaceX’s Starship vehicle will not be ready in time for the Artemis 3 mission in late 2025, given the amount of work needed to get the vehicle ready
+            </li>
+            <li>
+                Two years ago, anticipating future demand, Millennium began setting up a small satellite factory within the footprint of Boeing’s historic El Segundo factory. The Small Sat Factory, Powered by Millennium, officially opened in July
+            </li>
+            <li>
+                A 10-million-year delay in the rise of supernova winds would explain why the gas in early galaxies has time to form such large clumps. "Looking at low-metallicity dwarf galaxies with lots of ultraviolet radiation is somewhat similar to looking all the way back to the cosmic dawn," said Jecmen
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const urlContent = new URLSearchParams(window.location.search);
+
+            const newsIndex = urlContent.get('newsIndex');
+
+            if (newsIndex !== null) {
+                showBox(parseInt(newsIndex, 10));
+            }
+        });
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

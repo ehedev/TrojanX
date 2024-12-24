@@ -1,0 +1,115 @@
+/* Start About Us Section */
+
+.about-us {
+    padding-top: var(--sectionPadding);
+}
+
+.about-us .about-img {
+    margin-top: 60px;
+    background-image: url(../Media/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+.about-us .about-content {
+    padding-top: var(--sectionPadding);
+    padding-bottom: 20px;
+}
+
+.about-us .about-content h2 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #434343;
+    text-shadow: 0 0 3px #434343;
+    letter-spacing: var(--letterSpacing);
+}
+
+.about-us .about-content p {
+    line-height: 1.8;
+    font-size: 17px;
+    color: #363636;
+    text-shadow: 0 0 2px #363636;
+    text-align: justify;
+}
+
+.about-us .about-content p:not(:last-of-type) {
+    padding-bottom: 20px;
+}
+
+.about-us .about-content li {
+    list-style: disc;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/* End About Us Section */
+
+/* Start Team Section */
+
+.team {
+    padding-top: var(--sectionPadding);
+}
+
+.team .team-container {
+    display: var(--flexDisplay);
+    justify-content: space-between;
+}
+
+.team .team-container .team-card {
+    background-color: #000;
+    border-radius: 20px;
+    margin: 30px 20px;
+    padding: 20px 0;
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    transition: transform .6s ease;
+}
+
+.team .team-container .team-card:hover {
+    transform: translateY(-12px);
+}
+
+.team .team-container .team-card .team-person img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px var(--mainColor);
+}
+
+.team .team-container .team-card .team-info h3 {
+    color: #D7D7D7;
+    font-size: 20px;
+    margin: 15px 0;
+    text-shadow: 0 0 10px #D7D7D7;
+}
+
+.team .team-container .team-card:hover .team-info h3 {
+    color: var(--mainColor);
+    text-shadow: 0 0 10px var(--mainColor);
+}
+
+@media (max-width: 991px) {
+    .team .team-container {
+        display: var(--flexDisplay);
+        flex-direction: column;
+    }
+
+    .team .team-container .team-card {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .team .team-container .team-card:first-of-type {
+        order: 3;
+    }
+}
+
+/* End Team Section */

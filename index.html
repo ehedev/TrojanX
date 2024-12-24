@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trojan X | World News</title>
+    <link rel="icon" href="Media/Logo.png">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div class="welcome-screen">
+        <div class="screen-content">
+            <!-- <img id="christmas-logo" src="Media/Christmas Hat.png" alt=""> -->
+            <img id="logo" src="Media/Logo.png" alt="">
+            <h2>Trojan <span>X</span></h2>
+            <!-- <h3>Happy New Year</h3> -->
+        </div>
+    </div>
+    <!-- Welcome Screen -->
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="index.html"><img id="logo" src="Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a class="onpage" href="index.html">Home</a></li>
+            <li><a href="Pages/about-us.html">About Us</a></li>
+            <li><a href="Pages/terms.html">Terms</a></li>
+            <li><a href="Pages/contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+    
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="Pages/politics.html">Politics</a></li>
+            <li class="link"><a href="Pages/sport.html">Sport</a></li>
+            <li class="link"><a href="Pages/games.html">Games</a></li>
+            <li class="link"><a href="Pages/space.html">Space</a></li>
+            <li class="link"><a href="Pages/travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a class="onpage" href="index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="Pages/about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="Pages/terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="Pages/contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Landing Screen -->
+    
+    <section id="landing" class="landing">
+        <video id="news-video" src="Media/Trojan X - News.mp4" autoplay muted loop></video>
+        <button onclick="muteVideo()" class="first-mutebtn mutebtn" type="button">Unmute</button>
+
+        <div class="content">
+            <div class="text">
+                <h1>Trojan X News | <span>Live</span></h1>
+                <button onclick="muteVideo()" class="mutebtn" type="button">Unmute</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- End Landing Screen -->
+
+    <!-- Start Latest News Section -->
+    
+    <section id="latest-news" class="latest-news">
+        <div class="container">
+            <h2 class="special-heading">Latest News</h2>
+            <p>All The News Today</p>
+            <div class="slider-container">
+                <div class="slider">
+                    
+                    <div class="slider-card">
+                        <a class="category" href="Pages/sport.html">Sport</a>
+                        <a href="Pages/sport.html?newsIndex=0#one">
+                        <img class="img-slider" src="Media/Sport01.png">
+                        <div class="info">
+                            <h2>Ten Hag's Manchester United</h2>
+                            <p>United suffer European exit to a Bayern side who are a good version of whatever it is the hosts are trying to piece together.</p>
+                        </div></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a class="category" href="Pages/politics.html">Politics</a>
+                        <a href="Pages/politics.html?newsIndex=0#one">
+                        <img class="img-slider" src="Media/Politics01.png">
+                        <div class="info">
+                            <h2>US democracy is messy</h2>
+                            <p>The organizing principle of Joe Biden's presidency has been standing up for the idea of democracy.</p>
+                        </div></a>
+                    </div>
+                    
+                    <div class="slider-card">
+                        <a class="category" href="Pages/games.html">Games</a>
+                        <a href="Pages/games.html?newsIndex=0#one">
+                        <img class="img-slider" src="Media/Games01.png">
+                        <div class="info">
+                            <h2>Alan Wake 2: Complete Guide</h2>
+                            <p>This collection of guides will help players complete every chapter, solve every puzzle, and claim every collectible in Alan Wake 2.</p>
+                        </div></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a class="category" href="Pages/space.html">Space</a>
+                        <a href="Pages/space.html?newsIndex=0#one">
+                        <img class="img-slider" src="Media/Space01.png">
+                        <div class="info">
+                            <h2>NASA Rocket</h2>
+                            <p>The Space Launch System rocket and its two solid rocket boosters are coming together.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a class="category" href="Pages/travel.html">Travel</a>
+                        <a href="Pages/travel.html?newsIndex=0#one">
+                        <img class="img-slider" src="Media/Travel01.png">
+                        <div class="info">
+                            <h2>Delta Air Lines passenger planes</h2>
+                            <p>Diverted Delta passengers spend the night in remote military barracks in Canada.</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="indicators">
+                      <span class="indicator" onclick="currentCard(1)"></span>
+                      <span class="indicator" onclick="currentCard(2)"></span>
+                      <span class="indicator" onclick="currentCard(3)"></span>
+                      <span class="indicator" onclick="currentCard(4)"></span>
+                      <span class="indicator" onclick="currentCard(5)"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- End Latest News Section -->
+
+    <!-- Start Games News Section -->
+    
+    <section id="games-news" class="games-news">
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="title">
+                <h2><a href="Pages/games.html">Games</a></h2>
+                <p>Up-to-date news and headlines from the video games at Trojan X</p>
+            </div>
+
+            <div class="games-content">
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=1#two">
+                    <img src="Media/Games02.png" alt="">
+                    <div class="info">
+                        <p>GTA 6: Trailer for new game revealed after online leak</p>
+                    </div></a>
+                </div>
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=2#three">
+                    <img src="Media/Games03.png" alt="">
+                    <div class="info">
+                        <p>Mortal Kombat 1 Dev Gives Update on Crossplay Plans</p>
+                    </div></a>
+                </div>
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=3#four">
+                    <img src="Media/Games04.png" alt="">
+                    <div class="info">
+                        <p>Marvel's Spider-Man 2 Player Points Out Big Flaw in Emotional Scene</p>
+                    </div></a>
+                </div>
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=4#five">
+                    <img src="Media/Games05.png" alt="">
+                    <div class="info">
+                        <p>Every Major Video Game Release Coming Soon For Xbox Series X|S And Xbox One</p>
+                    </div></a>
+                </div>
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=5#six">
+                    <img src="Media/Games06.png" alt="">
+                    <div class="info">
+                        <p>Ready or Not Reveals Massive Improvements Ahead of 1.0 Release [EXCLUSIVE]</p>
+                    </div></a>
+                </div>
+                <div class="game-card">
+                    <a href="Pages/games.html?newsIndex=6#seven">
+                    <img src="Media/Games07.png" alt="">
+                    <div class="info">
+                        <p>YouTube Bans Baldur's Gate 3 Jaheira Actor</p>
+                    </div></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- End Games News Section -->
+
+    <!-- Start Editor's Picks Section -->
+    
+    <section id="editor-picks" class="editor-picks">
+        <div class="container">
+            <h2 class="special-heading">Editor's Picks</h2>
+            <p>Read editors-pick news and headlines online today</p>
+
+            <div class="editor-container">
+                <div class="editor-card">
+                    <a class="category" href="Pages/space.html">Space</a>
+                    <a href="Pages/space.html?newsIndex=1#two">
+                    <img class="eidtor-img" src="Media/Space02.png">
+                    <div class="editor-info">
+                        <h2>Watch Rocket Lab return to flight with satellite launch tonight</h2>
+                        <p>Rocket Lab aims to bounce back tonight (Dec. 14) from a launch failure.</p>
+                    </div></a>
+                </div>
+                <aside class="editor-sports">
+                    <h2>Sport News | Trojan X</h2>
+                    <ul class="news-links">
+                        <li>🢡<a href="Pages/sport.html?newsIndex=2#three">DANI BAIJENS: The Mood Maker Becomes A Team Leader</a></li>
+                        <li>🢡<a href="Pages/sport.html?newsIndex=3#four">Los Angeles Lakers win NBA's inaugural In-Season Tournament</a></li>
+                        <li>🢡<a href="Pages/sport.html?newsIndex=4#five">Egypt Win 2023 WSF Men’s World Team Championship</a></li>
+                        <li>🢡<a href="Pages/sport.html?newsIndex=0#one">United suffer European exit to a Bayern</a></li>
+                        <li>🢡<a href="Pages/sport.html?newsIndex=1#two">How United's worst-ever Champions League campaign</a></li>
+                        <li>🢡<a href="Pages/sport.html?newsIndex=5#six">Rangers cap championship season with 6 All-MLB selections</a></li>
+                    </ul>
+                </aside>
+            </div>
+            
+            <div class="editor-other">
+                <div class="other-card">
+                    <a href="Pages/games.html?newsIndex=7#eight"><img src="Media/Games08.png" alt=""></a>
+                    <div class="info">
+                        <p>Xbox Game Pass Adds Huge Open-World Game Today</p>
+                        <a href="Pages/games.html">Games</a>
+                    </div>
+                </div>
+                <div class="other-card">
+                    <a href="Pages/politics.html?newsIndex=1#two"><img src="Media/Politics02.png" alt=""></a>
+                    <div class="info">
+                        <p>Impeachment inquiry threatens Biden with election-year headache</p>
+                        <a href="Pages/politics.html">Politics</a>
+                    </div>
+                </div>
+                <div class="other-card">
+                    <a href="Pages/travel.html?newsIndex=1#two"><img src="Media/Travel02.png" alt=""></a>
+                    <div class="info">
+                        <p>Discover Seoul's seven most unforgettable Buddhist temples</p>
+                        <a href="Pages/travel.html">Travel</a>
+                    </div>
+                </div>
+                <div class="other-card">
+                    <a href="Pages/sport.html?newsIndex=1#two"><img src="Media/Sport02.png" alt=""></a>
+                    <div class="info">
+                        <p>How United's worst-ever Champions League campaign unfolded</p>
+                        <a href="Pages/sport.html">Sport</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- End Editor's Picks Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                SpaceX yet to select launch pad for next Axiom Space private astronaut mission
+            </li>
+            <li>
+                Rebecca Welch to be first female Premier League referee and Sam Allison to be first Black top-flight referee in 15 years
+            </li>
+            <li>
+                The epic RPG based on Dungeons and Dragons and the survival horror were the big winners at last week's Game Awards in Los Angeles
+            </li>
+            <li>
+                Germany's SPD wants tight Twitter supervision after Musk takeover
+            </li>
+            <li>
+                Italy calls for redistribution of migrants as 1,000 people wait on board
+            </li>
+            <li>
+                Vaccines for seasonal flu, COVID-19 start in Albania
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Pages/politics.html">Politics News</a></li>
+                    <li><a href="Pages/sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="Pages/games.html">Games News</a></li>
+                    <li><a href="Pages/space.html">Space News</a></li>
+                    <li><a href="Pages/travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="#latest-news">Latest News</a></li>
+                    <li><a href="#games-news">Top Games News</a></li>
+                    <li><a href="#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="Pages/about-us.html">About Us</a></li>
+                    <li><a href="Pages/terms.html">Terms</a></li>
+                    <li><a href="Pages/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = 'CSS/dark-mode.css';
+            link_pages.href = 'CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

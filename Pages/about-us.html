@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/about-us.css">
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="onpage" href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+    
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a class="onpage" href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start About Section -->
+    
+    <section class="about-us">
+        <div class="container">
+            <h2 class="special-heading">About Us</h2>
+            <p>Everything you need to know about the workings of Trojan X</p>
+        </div>
+        <div class="about-img"></div>
+        <div class="container">
+            <div class="about-content">
+                <h2>Trojan X is the world's leading public service broadcaster</h2>
+                <p>
+                    We're impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain millions of people in the UK and around the world.
+                </p>
+                <p>We do this across:</p>
+                <li>
+                    A portfolio of television services, including the UK's most-watched channel Trojan X One, the pioneering online-only youth service Trojan X Three, and our multi award-winning channels for children, as well as national and regional television programmes and services across England, Northern Ireland, Scotland, and Wales.
+                </li>
+                <li>
+                    Ten UK-wide radio networks, providing the best live music broadcasting in the UK, as well as speech radio which informs, educates and entertains. We also have two national radio services each in Scotland, Wales, and Northern Ireland and 39 local radio stations across England and the Channel Islands, providing an invaluable and unique service to listeners across the UK.
+                </li>
+                <li>
+                    Our digital services including Trojan X News, Sport, Weather CBBC and CBeebies, iPlayer and Trojan X Sounds, Trojan X Red Button and our vast archive.
+                </li>
+                <li>
+                    Trojan X World Service television, radio and online in more than 40 languages.
+                </li>
+                <p>
+                    Established by a Royal Charter, Trojan X is principally funded through the licence fee paid by UK households. Our role is to fulfil our mission and promote our Public Purposes.
+                </p>
+                <p>
+                    Our commercial operations, including Trojan X Studios, the Trojan X award-winning production company, and world-class distributor, provide additional revenue for investment in new programming and services for UK audiences.
+                </p>
+                <p>
+                    Trojan X's Board ensures that we deliver our mission and public purposes which are set out in the Charter. The Executive Committee is responsible for day-to-day management. We are regulated by Ofcom.
+                </p>
+            </div>   
+        </div>
+    </section>
+
+    <!-- End About Section -->
+
+    <!-- Start Team Section -->
+    
+    <section class="team">
+        <div class="container">
+            <h2 class="special-heading">Team</h2>
+            <p>Meet Trojan X's Team</p>
+        </div>
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-person">
+                    <img src="../Team/Ali Nasr.png" alt="Ali Nasr" title="Ali Nasr">
+                </div>
+                <div class="team-info">
+                    <h3>Ali Nasr</h3>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-person">
+                    <img src="../Team/Emad Wageeh.png" alt="Emad Wageeh" title="Emad Wageeh">
+                </div>
+                <div class="team-info">
+                    <h3>Emad Wageeh</h3>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-person">
+                    <img src="../Team/Rahma Shaban.png" alt="Rahma Shaban" title="Rahma Shaban">
+                </div>
+                <div class="team-info">
+                    <h3>Rahma Shaban</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Team Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                SpaceX yet to select launch pad for next Axiom Space private astronaut mission
+            </li>
+            <li>
+                Rebecca Welch to be first female Premier League referee and Sam Allison to be first Black top-flight referee in 15 years
+            </li>
+            <li>
+                The epic RPG based on Dungeons and Dragons and the survival horror were the big winners at last week's Game Awards in Los Angeles
+            </li>
+            <li>
+                Germany's SPD wants tight Twitter supervision after Musk takeover
+            </li>
+            <li>
+                Italy calls for redistribution of migrants as 1,000 people wait on board
+            </li>
+            <li>
+                Vaccines for seasonal flu, COVID-19 start in Albania
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

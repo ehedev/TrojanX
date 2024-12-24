@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games News | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <style>
+        .games .games-timeline .games-content {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a class="onpage" href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Games News Section -->
+
+    <div class="container global-heading">
+        <h2 class="special-heading">Games News</h2>
+        <p>The biggest video game news, rumors, previews, and info about the PC</p>
+    </div>
+    
+    <section id="global" class="global games">
+        <div class="global-container games-container">
+            <div class="global-timeline games-timeline">
+                <div class="global-content games-content">
+                    <a href="#one" onclick="showBox(0)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games01.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Alan Wake 2: Complete Guide & Walkthrough</p>
+                        </div>
+                    </div></a>
+                    <a href="#two" onclick="showBox(1)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games02.png" alt="">
+                        <div class="games-info global-info">
+                            <p>GTA 6: Trailer for new game revealed after online leak</p>
+                        </div>
+                    </div></a>
+                    <a href="#three" onclick="showBox(2)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games03.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Mortal Kombat 1 Dev Gives Update on Crossplay Plans</p>
+                        </div>
+                    </div></a>
+                    <a href="#four" onclick="showBox(3)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games04.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Marvel's Spider-Man 2 Player Points Out Flaw Emotional Scene</p>
+                        </div>
+                    </div></a>
+                    <a href="#five" onclick="showBox(4)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games05.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Every Major Video Game Coming Soon For Xbox Series X|S And One</p>
+                        </div>
+                    </div></a>
+                    <a href="#six" onclick="showBox(5)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games06.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Ready or Not Reveals Massive Improvements Ahead 1.0 Release</p>
+                        </div>
+                    </div></a>
+                    <a href="#seven" onclick="showBox(6)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games07.png" alt="">
+                        <div class="games-info global-info">
+                            <p>YouTube Bans Baldur's Gate 3 Jaheira Actor</p>
+                        </div>
+                    </div></a>
+                    <a href="#eight" onclick="showBox(7)">
+                    <div class="global-card games-card">
+                        <img src="../Media/Games08.png" alt="">
+                        <div class="games-info global-info">
+                            <p>Xbox Game Pass Adds Huge Open-World Game Today</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Games News Section -->
+
+    <!-- Start News Details Section -->
+    
+    <section class="details-section">
+        <div class="container">
+            <div class="news-details">
+                <div id="one" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games01.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Alan Wake 2: Complete Guide & Walkthrough</h3>
+                        <p>
+                            Alan Wake 2 is a complex survival horror game that is packed to the brim with puzzles to solve, clues to decipher, and collectibles to locate. As players work through this content, they may occasionally find themselves stuck and in need of assistance. Providing that assistance is the precise purpose of the guides that are collected below, and they will help players make the most of their time with Alan Wake 2.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Games-Sub01.png" alt="">
+                        </div>
+                        <p>
+                            Alan Wake 2 can be a tough nut to crack, and even the game's basic mechanics may leave some players confused. These guides are here to address that confusion and help fans start with a strong foundation.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Games-Sub02.png" alt="">
+                        </div>
+                        <p>
+                            The story of Alan Wake 2 is told over the course of 19 chapters, and players will take control of two protagonists as they work to complete them. These walkthroughs will help players get through those chapters, and some of their particularly tricky objectives have been further elaborated in the stand-alone guides that are underneath them.
+                        </p>
+                        <p>
+                            There are several different types of collectibles in Alan Wake 2, and many of them can only be obtained by solving a puzzle. While not all of these puzzles are extremely difficult to address, some of them are quite tricky, and this group of guides is here to help players that may get stuck on them.
+                        </p>
+                        <p>
+                            Cult Stashes are containers in Alan Wake 2 that hold a variety of consumable items, including ammo and healing items, and there are 22 of them in total. Here are details on how to solve the puzzles and find the keys that are used to open those containers.
+                        </p>
+                        <p>
+                            There are 17 Nursery Rhyme puzzles in Alan Wake 2, and each one is solved by placing Dolls in specific configurations. Here are details on those configurations, and players will receive a Charm every time that they address a Nursery Rhyme.
+                        </p>
+                        <p>
+                            Players that want to upgrade Saga's weapons in Alan Wake 2 will need to obtain Manuscript Fragments, materials that are earned by opening Alex Casey Lunch Boxes. There are 21 of those Lunch Boxes in total, and the following guide will help players find them all.
+                        </p>
+                        <span class="sub-description">By William Parks, Trojan X</span>
+                        <span class="sub-description">Updated Nov 14, 2023</span>
+                    </div>
+                </div>
+                <div id="two" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games02.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>GTA 6: Trailer for new game revealed after online leak</h3>
+                        <p>
+                            Developer Rockstar pressed publish 15 hours before a heavily trailed release after a low-quality copy spread online.
+                        </p>
+                        <p>
+                            The 90-second teaser confirmed the game will be set in Miami-inspired Vice City and star a female protagonist, Lucia, for the first time since the 1990s.
+                        </p>
+                        <p>
+                            But the waiting isn't over, as the game isn't due to be released until 2025.
+                        </p>
+                        <p>
+                            The latest main game in the series will be the sequel to 2013's smash hit GTA V, which became the second best-selling video game of all time, following Minecraft.
+                        </p>
+                        <p>
+                            There have been seemingly endless rumours and leaks for the past decade about GTA VI.
+                        </p>
+                        <p>
+                            The mere confirmation that a trailer was coming - an announcement of an announcement, if you will - was enough to spark global headlines in November as desperate fans sought out any information about the new game.
+                        </p>
+                        <p>
+                            The trailer shows people racing cars, partying on boats and a man pulling an alligator out of a swimming pool, all to the Americana sounds of Love is a Long Road by Tom Petty.
+                        </p>
+                        <span class="sub-description">By Antonio Calarc, Trojan X</span>
+                        <span class="sub-description">Updated 5:03 PM EST, Tue December 16, 2023</span>
+                    </div>
+                </div>
+
+                <div id="three" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games03.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Mortal Kombat 1 Dev Gives Update on Crossplay Plans</h3>
+                        <p>
+                            Mortal Kombat 1 developer NetherRealm Studios shares an update regarding its crossplay plans, revealing that the much-anticipated feature will arrive in February 2024. However, crossplay will not be supported in the Nintendo Switch version of Mortal Kombat 1.
+                        </p>
+                        <p>
+                            Mortal Kombat 1 is the 12th mainline entry in the long-running fighting game series, acting as a soft reboot following the events of Mortal Kombat 11 and its Aftermath DLC. The game launched on September 19 with a variety of single-player and multiplayer modes, but crossplay was not one of the supported features at launch. This past November, game director Ed Boon teased that crossplay would come to Mortal Kombat 1 in the near future, with additional features such as ping and Wi-Fi filters being under consideration. Boon also held a Twitter poll, allowing Mortal Kombat fans to vote for their most desired online feature. Crossplay was the most-voted option by a considerable margin, but NetherRealm did not share any specific details about the feature until the December 13 Kombat Kast livestream.
+                        </p>
+                        <p>
+                            During the latest Kombat Kast, developers from NetherRealm Studios confirmed that the crossplay update will be released in February 2024 for Mortal Kombat 1 on PC, PlayStation 5, and Xbox Series X|S. The Nintendo Switch version of Mortal Kombat 1 will not receive crossplay, likely because of technical limitations regarding this version of the game. Moreover, NetherRealm confirms the aforementioned Wi-Fi filter will be added to Mortal Kombat 1 in an update as well. The Wi-Fi filter allows players to turn down matches based on an opponent's internet connection quality, allowing them to avoid hindrances such as lag and disconnects.
+                        </p>
+                        <p>
+                            The developers state that patch notes for Mortal Kombat 1's latest update will be released soon, detailing additional balance changes, game adjustments, and bug fixes. This update will also bring various gameplay tweaks to Mortal Kombat 1 Kameo fighters such as Kano and Sonya Blade. Since Quan Chi will make his Mortal Kombat 1 debut on December 14 for Kombat Pack owners, the update is expected to be released sometime within the next week. Quan Chi will be released on December 21 for all Mortal Kombat 1 players.
+                        </p>
+                        <p>
+                            Although the Nintendo Switch version will not reap the benefits of crossplay, a notable portion of the Mortal Kombat 1 player base will finally be able to play online matches together. In addition, crossplay helps ensure that players will be able to find online matches more quickly and consistently since the player pool will be shared between PC, PS5, and Xbox Series X|S.
+                        </p>
+                   
+                        <span class="sub-description">By Michel Soliman, Trojan X</span>
+                        <span class="sub-description">20th December 2023</span>
+                    </div>
+                </div>
+
+                <div id="four" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games04.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Marvel's Spider-Man 2 Player Points Out Big Flaw in Emotional Scene</h3>
+                        <p>
+                            A Marvel's Spider-Man 2 player noticed a flaw in one of the most emotional scenes in the game. Despite the error, the latest entry in Insomniac's Spider-Man franchise has been critically acclaimed for its immersive gameplay, and how the characters are portrayed. The sequel also offers the option to switch between Peter Parker and Miles Morales.
+                        </p>
+                        <p>
+                            The Spider-Man games allow players to swing around New York City fighting bad guys and helping citizens in various missions. They can also meet NPCs with interesting stories along the way, like John Howard. First appearing in 2018's Spider-Man, Howard is known for taking care of a flock of pigeons that his late wife left behind. Players can also encounter this eccentric fellow in Spider-Man: Miles Morales and Spider-Man 2.
+                        </p>
+                        <p>
+                            In Spider-Man 2's "Howard" side mission, Howard sends in a request to find a new home for his pigeons in Queens, so they can be free to fly on to new adventures. After accomplishing the mission and returning to Howard's location, players will discover an ambulance with Howard in it, with paramedics saying that he passed away peacefully. However, Reddit user Aglisito pointed out that Howard's body isn't in the ambulance, even sharing zoomed-in photos to prove that the vehicle is empty.
+                        </p>
+                        <p>
+                            It's unknown whether this is a glitch or if Insomniac just didn't want to show players Howard's lifeless body during this emotional side mission. It didn't seem to bother many Spider-Man 2 fans, as they started to make light of this flaw. They jokingly said that Howard was "reduced to shreds," in reference to an iconic Futurama scene. Others said that the pigeons probably took him with them and flew far away.
+                        </p>
+                        <span class="sub-description">By Matan Jack, Trojan X</span>
+                        <span class="sub-description">Published 3:10 PM EST, Fri December 15, 2023</span>
+                    </div>
+                </div>
+
+                <div id="five" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games05.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Every Major Video Game Release Coming Soon For Xbox Series X|S And Xbox One</h3>
+                        <p>
+                            As the Xbox Series X/S enjoys its third year, Microsoft's platform is gradually amassing a respectable library. Consoles typically do not start to flourish until the latter half of their existence, once cross-gen stops being a priority and developers can focus exclusively on crafting projects for only the most modern systems. The Xbox Series X/S has yet to reach that point, although things are moving in that direction. 
+                        </p>
+                        <p>
+                            2022 produced many stellar games, particularly in the open-world genre. Elden Ring, Lego Star Wars: The Skywalker Saga, A Plague Tale: Requiem, and Tiny Tina's Wonderlands are all good or great, and they offer wildly different experiences from each other. The year's successor has followed suit with projects like Dead Space, Street Fighter 6, Hi-Fi Rush, Remnant 2, Starfield, Forza Motorsport, and Lies of P, and there is still some gaming to be done before 2023 ends its run.
+                        </p>
+                        <p>
+                            Updated December 13, 2023: The Game Awards included quite a lot of reveals. The upcoming Xbox games were added to the calendar over the last few days: Monster Hunter Wilds, OD (Overdose), Marvel's Blade
+                        </p>
+                        <span class="sub-description">By Amelle Soliman, Trojan X</span>
+                        <span class="sub-description">Updated on December 16, 2023</span>
+                    </div>
+                </div>
+
+                <div id="six" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games06.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Ready or Not Reveals Massive Improvements Ahead of 1.0 Release [EXCLUSIVE]</h3>
+                        <p>
+                            Ready or Not originally launched as a Steam Early Access title in December 2021. Touted as the spiritual successor to the early Rainbow Six entries and the SWAT franchise, it immediately filled a long-abandoned niche and became a fairly big hit on Valve's storefront. As of mid-December, Ready or Not boasts over 100,000 Steam reviews with a "Very Positive" overall rating.
+                        </p>
+                        <p>
+                            Two years following its initial debut, Ready or Not is leaving early access on Wednesday, December 13. Ahead of that release, Void Interactive has provided Game Rant with an exclusive developer diary that details every novelty that the 1.0 version of the game will have to offer. Among other things, the video reveals new formations, commands, and some substantial improvements to the game's AI.
+                        </p>
+                        <p>
+                            Most of the movement mechanics have been overhauled to offer more granular control over how the team traverses each level. For example, the Fall In command will now let players choose how each member is grouped together, ranging from double-file formations to diamond and wedge lineups. Holding a specific squad shape or even alternating between them on the fly should also be maximally seamless, as the AI team members will keep track of their order in the formation, and even make sure they don't get in the way of the player's line of fire.
+                        </p>
+                        
+                        <span class="sub-description">By Fox Ahmed, Trojan X</span>
+                        <span class="sub-description">Published on December 17, 2023</span>
+                    </div>
+                </div>
+
+                <div id="seven" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games07.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>YouTube Bans Baldur's Gate 3 Jaheira Actor</h3>
+                        <p>
+                            Tracy Wiles, the actor who plays Jaheira in Baldur’s Gate 3, recently discovered her YouTube account was unceremoniously banned, with little word from the website as to why. Her account closure came with no warning, leaving the Baldur’s Gate 3 actor and her fans confused.
+                        </p>
+                        <p>
+                            Jaheira is one of the four non-Origin Companions players meet later in Baldur’s Gate 3. The veteran High Harper appeared as one of the first companions players recruit in Baldur’s Gate 1, making her one of the two characters players can recruit in all three games. In Baldur’s Gate 3, she is portrayed by Wiles, who has begun a live playthrough of her own on YouTube and Twitch.
+                        </p>
+                        <p>
+                            As reported by TheGamer, On December 5, Wiles discovered her YouTube account had been banned without warning or notice. She was left baffled as to why, and posted about it on her personal Twitter. TeamYouTube, the streaming service’s support account on the social media site, replied saying it was looking into the issue, and nearly a week later, came back saying her account was “linked to a Google account that has an issue.” It has since not elaborated any further, leaving the voice behind Jaheira in Baldur's Gate 3 with more questions than answers.
+                        </p>
+                        <p>
+                            Originally, Wiles had speculated her account might have been banned simply because she had said the word “sphincter” a lot on stream, as the word is used to describe the doors of the Mind Flayer ship in Baldur's Gate 3. Even so, despite being used in low brow humor, sphincter is a medical term, and would not break any of YouTube's Terms of Service. That, however, has not stopped her fans from affectionately dubbing the scandal “Sphinctergate” on social media–a tag which, alongside #freejaheira, has drawn even more attention to Wiles and her playthrough.
+                        </p>
+                        <p>
+                            Wiles has since tried to contact YouTube, hoping she can clear up whatever issues are present on the linked Google account and get things back to normal. Hopefully, she will be able to get her YouTube restored soon, but in the meantime, fans can watch Wiles’ playthrough videos on her Twitch account.
+                        </p>
+                        <p>
+                            During The Game Awards this year, Baldur’s Gate 3 swept the competition, claiming a total of six awards out of its eight nominations, including Game of the Year.
+                        </p>
+                        
+                        <span class="sub-description">By Amedan Amkanal, Trojan X</span>
+                        <span class="sub-description">Published on November 11, 2023</span>
+                    </div>
+                </div>
+
+                <div id="eight" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Games08.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Xbox Game Pass Adds Huge Open-World Game Today</h3>
+                        <p>
+                            Xbox Game Pass is today adding Far Cry 6 to its vast content library. The open-world shooter's debut on the platform arrives just two days after Xbox Game Pass added holiday-spirited puzzler Tin Hearts to its catalog.
+                        </p>
+                        <p>
+                            Microsoft has so far confirmed ten new Xbox Game Pass titles for December 2023, almost all of which have already reached the subscription service. Far Cry 6 is the only game from that batch that is still pending release, which is scheduled for later today.
+                        </p>
+                        <p>
+                            Ubisoft's FPS still hasn't hit Xbox Game Pass as of 7am PT on December 14, although that's nothing unusual. New arrivals do often debut at midnight, local time, but that isn't always the case. Far Cry 6 won't be the first entry in the franchise to release on the platform, as Far Cry 5 has been available on Xbox Game Pass since July 2022.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Games-Sub03.png" alt="">
+                        </div>
+                        <p>
+                            As for the game at hand, Far Cry 6 is the most content-packed installment in Ubisoft's long-running series, boasting enough activities to keep gamers occupied for dozens of hours. Its main quest alone is about 25 hours long, while anyone adamant to clear all of its side content will easily sink over 60 hours into the game. Granted, quantity doesn't always equal quality, and many long-time fans of the franchise would argue that the 2021 shooter is a prime example of that, as it's generally seen as one of the weaker Far Cry games.
+                        </p>
+                        <p>
+                            But while many of the design decisions that went into the making of Far Cry 6 alienated the series' existing fandom, they also attracted some new audiences. Namely, the game's heavy emphasis on RPG elements makes it a compelling experience for people who enjoy looter shooters in the vein of Borderlands. The fictional tropical country of Yara that serves as the setting of Far Cry 6 is also a beautiful playground to explore, with another one of the game's selling points being Breaking Bad star Giancarlo Esposito's memorable portrayal of villain Anton Castillo.
+                        </p>
+                        <p>
+                            Far Cry 6 is the last Xbox Game Pass title for December 2023 that has been confirmed by Microsoft to date. However, the company historically tried spacing out new arrivals on its platform throughout any given month. While it's thus possible that the subscription service will go two weeks without any new releases in the second half of December, it's also conceivable that Microsoft will be debuting more Xbox Game Pass titles before the turn of the year.
+                        </p>
+                        
+                        <span class="sub-description">By Dominik Bošnjak, Trojan X</span>
+                        <span class="sub-description">Published 4 Days Ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End News Details Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                Xbox Game Pass is today adding Far Cry 6 to its vast content library. The open-world shooter's debut on the platform arrives just two days after Xbox Game Pass added holiday-spirited puzzler Tin Hearts to its catalog
+            </li>
+            <li>
+                Tracy Wiles, the actor who plays Jaheira in Baldur’s Gate 3, recently discovered her YouTube account was unceremoniously banned, with little word from the website as to why. Her account closure came with no warning, leaving the Baldur’s Gate 3 actor and her fans confused
+            </li>
+            <li>
+                The epic RPG based on Dungeons and Dragons and the survival horror were the big winners at last week's Game Awards in Los Angeles
+            </li>
+            <li>
+                Ready or Not Reveals Massive Improvements Ahead of 1.0 Release [EXCLUSIVE]
+            </li>
+            <li>
+                Marvel's Spider-Man 2 Player Points Out Big Flaw in Emotional Scene
+            </li>
+            <li>
+                Mortal Kombat 1 developer NetherRealm Studios shares an update regarding its crossplay plans, revealing that the much-anticipated feature will arrive in February 2024. However, crossplay will not be supported in the Nintendo Switch version of Mortal Kombat 1
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const urlContent = new URLSearchParams(window.location.search);
+
+            const newsIndex = urlContent.get('newsIndex');
+
+            if (newsIndex !== null) {
+                showBox(parseInt(newsIndex, 10));
+            }
+        });
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

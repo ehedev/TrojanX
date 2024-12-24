@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel News | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a class="onpage" href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Travel News Section -->
+
+    <div class="container global-heading">
+        <h2 class="special-heading">Travel News</h2>
+        <p>Discover exciting world events, luxury travel deals, safety tips, and more</p>
+    </div>
+    
+    <section id="global" class="global travel">
+        <div class="global-container travel-container">
+            <div class="global-timeline travel-timeline">
+                <div class="global-content travel-content">
+                    <a href="#one" onclick="showBox(0)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel01.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Delta passengers spend the night in military barracks in Canada</p>
+                        </div>
+                    </div></a>
+                    <a href="#two" onclick="showBox(1)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel02.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Discover Seoul's seven most unforgettable Buddhist temples</p>
+                        </div>
+                    </div></a>
+                    <a href="#three" onclick="showBox(2)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel03.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Plus-size travelers bring new attention to Southwest Airlines</p>
+                        </div>
+                    </div></a>
+                    <a href="#four" onclick="showBox(3)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel04.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Score Ticket on a Major EU When You Book Your Next Flight to EU</p>
+                        </div>
+                    </div></a>
+                    <a href="#five" onclick="showBox(4)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel05.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>What the FAA Is Doing to Make Thanksgiving Travel Smoother</p>
+                        </div>
+                    </div></a>
+                    <a href="#six" onclick="showBox(5)">
+                    <div class="global-card travel-card">
+                        <img src="../Media/Travel06.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Here's When Venice's Day Trip Fee Will Go Into Effect</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Travel News Section -->
+
+    <!-- Start News Details Section -->
+    
+    <section class="details-section">
+        <div class="container">
+            <div class="news-details">
+                <div id="one" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel01.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Diverted Delta passengers spend the night in remote military barracks in Canada</h3>
+                        <p>
+                            Hundreds of airline passengers bound for Detroit spent Sunday night in a remote Canadian military barracks after their Delta Air Lines jet experienced mechanical issues, the airline said.
+                        </p>
+                        <p>
+                            Delta Flight 135, carrying 270 customers, three pilots and seven flight attendants from Amsterdam to the US, made the unexpected overnight detour to Happy Valley-Goose Bay in the Canadian province of Newfoundland and Labrador “out of an abundance of caution,” Delta said in a statement.
+                        </p>
+                        <p>
+                            The Federal Aviation Administration said the pilot of the Airbus 330 “reported problems with deicing equipment and diverted to Happy Valley-Goose Bay Airport in Canada around 3:15 p.m. local time.” The FAA said it will investigate.
+                        </p>
+                        <p>
+                            “Crew duty times were impacted due to weather and runway conditions at the Goose Bay airport causing the airport to suspend operations,” Delta said, and the passengers stayed overnight Sunday in military barracks in Happy Valley-Goose Bay, a community of about 8,000 residents in Central Labrador. Goose Bay Airfield is home to military and civilian operations with two major runways.
+                        </p>
+                        <p>
+                            The airline worked with local officials to provide food and accommodations for passengers, and Delta said it is providing compensation to affected customers but declined to offer specifics.
+                        </p>
+                        <p>
+                            “Delta sent additional aircraft to Goose Bay to bring customers to their final destination Monday. We apologize to customers for this inconvenience,” the airline said.
+                        </p>
+                        <p>
+                            Trojan X has reached out to Goose Bay Airport, which handles an average of 160,000 passengers a year, for additional information.
+                        </p>
+                        <span class="sub-description">By Marnie Hunter, Trojan X</span>
+                        <span class="sub-description">Updated 1:08 PM EST, Tue December 12, 2023</span>
+                    </div>
+                </div>
+
+                <div id="two" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel02.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Discover Seoul's seven most unforgettable Buddhist temples</h3>
+                        <p>
+                            "Before we begin", said Jang Jeok, a Buddhist priest whose name means "extreme calmness" in Korean, "you must clear your mind of all traces of city noise. Let us meditate." I'd just hiked an hour uphill through Seoul's Bukhansan National Park to reach Jang at Ilseonsa Temple, where he has lived alone for the last seven years, keeping constant watch over the city below.
+                        </p>
+                        <p>
+                            For a compact nation, South Korea has an astonishing number of Buddhist temples – approximately 20,000, some of which are more than 1,000 years old. Korean temples stand apart visually from temples in other parts of Asia, as many are timber-frame structures made of Korean red pine that are painted in the country's traditional Dancheong (aquamarine) hue that adornes wooden buildings. Some also feature out-of-this-world chanting. It all combines to produce a soul-soothing recipe for serenity.
+                        </p>
+                        <p>
+                            Given his intimate and expert familiarity on the topic, I'd come to Jang for his advice about which Buddhist temples travellers should see in Seoul. "While I definitely advise tourists to visit Jogyesa and Bongeunsa, I strongly recommend that they seek out small temples, such as those located by mountains and rivers," he said. "Since they are not commercialised and are in harmony with nature, one is bound to have a more spiritual experience and leave Seoul with better memories."
+                        </p>
+                        <p>
+                            Here, Jang offers his expert picks of seven Seoul temples you shouldn't miss.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Travel-Sub01.png" alt="">
+                        </div>
+                        <p>
+                            According to Jang, no guide to Seoul's best temples would be complete without mentioning Jogyesa. Constructed in 1395, Jogyesa is South Korea's most important temple. It is the chief temple of the Jogye Order that represents the largest segment of the country's Buddhist population – which comprises approximately 1,900 active temples, 13,000 monks and nuns and 7 million followers.
+                        </p>
+                        <p>
+                            Located in the heart of downtown Seoul, Jogyesa is surrounded by high-rise buildings, creating a wonderful ancient-meets-modern juxtaposition. And while Jang says a temple surrounded by corporate and financial buildings may make for a less spiritual experience, it remains popular with travellers and locals alike. Here, visitors will witness many genuine displays of religious devotion, as people sit outside the doors of Daeungjeon, the main temple hall, studying Buddhist texts before circumambulating the lofty, 500-year-old Sophora japonica tree – also known as "the Scholar tree".
+                        </p>
+                        <p>
+                            One of Jang's favourite times to visit is in the months leading up to the national holiday of Buddha's birthday (Buchonim oshin nal) in the spring (roughly mid-April to mid-May). During this period, colourful lanterns are strung up like a hanging carpet above the temple grounds and sunlight penetrates the gaps, casting dappled light on everything and everyone below. While lanterns can be found at all temples at this time, they are at their most numerous and impressive at Jogyesa, and temple workers ascend on hydraulic lifts to attach the handwritten prayers of devotees between them.
+                        </p>
+                        <span class="sub-description">By Ben McKechnie, Trojan X</span>
+                        <span class="sub-description">13th December 2023</span>
+                    </div>
+                </div>
+                
+                <div id="three" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel03.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Plus-size travelers bring new attention to Southwest Airlines’ ‘customer of size’ policy on TikTok</h3>
+                        <p>
+                            Southwest Airlines’ longstanding “customer of size” policy is generating new chatter, thanks to viral TikTok videos and media coverage surrounding efforts to push other airlines to offer seating policies for passengers who don’t fit comfortably into today’s narrow airline seats.
+                        </p>
+                        <p>
+                            The policy, which Southwest says has been around for more than 30 years, allows passengers to purchase additional seats before travel and receive a refund of the cost of those extra seats after travel is completed.
+                        </p>
+                        <p>
+                            Southwest encourages passengers to purchase extra seats in advance to help the airline plan for the number of occupied seats and to “ensure we can accommodate all Customers on the flight for which they purchased a ticket and avoid asking Customers to relinquish their seats for an unplanned accommodation,” the policy says.
+                        </p>
+                        <p>
+                            Passengers can also speak with a customer service agent at the departure gate without purchasing more space in advance to receive complimentary additional seating.
+                        </p>
+                        <p>
+                            A TikTok video posted by user @Kimmystyled, featuring a passenger who asks to use the policy at a departure gate, has been viewed nearly a million times since it was posted in October. Southwest’s policy is unusual among US carriers.
+                        </p>
+                        <p>
+                            “It should be the industry norm,” the post says. “Flying is public transportation and should be more comfortable and accessible for all people including fat and disabled people.” CNN tried to reach @Kimmystyled but did not immediately hear back.
+                        </p>
+                        <p>
+                            Many commenters expressed support and thanks to the poster for publicizing the policy while others questioned the free seat. “I think you should get a seat for a lower fee but I am 6’7 and I pay for extra leg room,” wrote one.
+                        </p>
+                        <span class="sub-description">By Marnie Hunter, Trojan X</span>
+                        <span class="sub-description">Published 5:26 PM EST, Fri December 15, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="four" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel04.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Alaska Airlines Teams Up With Canadian Airline to Add Service to Toronto</h3>
+                        <p>
+                            Alaska Airlines has launched a new partnership with a Canadian airline, soon benefitting passengers across both sides of the border. 
+                        </p>
+                        <p>
+                            Beginning in January, regional airline Canada's Porter Airlines will team up with Alaska to launch flights from its main hub in Toronto to both Los Angeles and San Francisco, Alaska Airlines announced this week.
+                        </p>
+                        <p>
+                            West Coast-focused Alaska Airlines maintains hubs in both major Californian airports, making the partnership a strategic move to boost its presence in Canada. Travelers will soon benefit from seamless connections on both airlines with ticketing and baggage handling.
+                        </p>
+                        <div class="description-img">
+                            <img src="../Media/Travel-Sub02.png" alt="">
+                        </div>
+                        <p>
+                            “Porter Airlines opens new opportunities for our guests to travel to Canada in style,” said Brett Catlin, vice president of loyalty, alliances, and sales at Alaska Airlines in a statement. “We’re thrilled to partner with a vibrant and growing airline that offers a refined experience including top-notch inflight service and terrific onboard amenities.”
+                        </p>
+                        <p>
+                            Porter’s Los Angeles flight starts first on Jan. 16, while San Francisco service inaugurates on Jan. 25. Both routes will be operated once daily by Porter’s fleet of new Embraer E195-E2 aircraft, which features a comfortable 2-2 configuration.
+                        </p>
+                        <p>
+                            These interline flights can now be booked on Alaska and Porter’s websites. Alaska Mileage Plan members who purchase Porter flights directly through Alaska can “earn at least 100% of the miles flown and 100% elite-qualifying miles,” according to the airline.
+                        </p>
+                        <p>
+                            Both airlines intend to expand this partnership throughout 2024 by allowing full mileage earning, no matter where travelers book their flights. Alaska also hinted at more benefits for both Mileage Plan and VIPorter loyalty members as the partnership grows.
+                        </p>
+                        <p>
+                            The announcement of this partnership comes just over a week after Alaska announced its intent to acquire Hawaiian Airlines, valued at about $1.9 billion. For its part, Porter Airlines marks Alaska’s 30th airline partner. Alaska later joined the Oneworld alliance in 2021 and continues to maintain unique partnerships with airlines such as Fiji Airways and Korean Air, connecting travelers to “more than 1,000 destinations around the world,” according to its website.
+                        </p>
+                        <span class="sub-description">By Stella Shon, Trojan X</span>
+                        <span class="sub-description">Updated on December 15, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="five" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel05.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>What the FAA Is Doing to Make Thanksgiving Travel Smoother</h3>
+                        <p>
+                            The Federal Aviation Authority (FAA) is working to minimize potential disruptions over the holidays by implementing contingency plans in advance. 
+                        </p>
+                        <p>
+                            The FAA will plan to use restricted airspace released by the military off the East Coast and the Gulf of Mexico for commercial flights “to lessen inland volume and reduce delays during holiday travel,” according to the agency. Commercial flights with departures scheduled “well in advance” will also be prioritized over private jets during incidents of bad weather or airspace congestion.
+                        </p>
+                        <p>
+                            In addition, the FAA said it has ensured no space launches are scheduled during the busiest times around the Thanksgiving holiday.
+                        </p>
+                        <p>
+                            The efforts come as the air industry and the Transportation Security Administration (TSA) have predicted a record-breaking Thanksgiving and holiday season with 4.7 million travelers expected to fly. It also comes as storms are forecast ahead of Turkey Day, which always have the potential to lead to disruptions.
+                        </p>
+                        <p>
+                            “This year, we are seeing more people flying than ever with fewer cancellations,” Transportation Sec. Pete Buttigieg said during a news conference on Monday, according to The Hill.
+                        </p>
+                        <p>
+                            Another complication is the ongoing shortage of air traffic controllers, which the FAA has said it is working to address by aiming to hire 1,500 new staff this year and 1,800 next year. Among its initiatives, the agency said it is working with colleges and universities to “ensure that graduates from [Air Traffic-Collegiate Training Initiative] programs have the necessary skills to begin on-the-job training at a facility,” and kicking off a year-round hiring track for experienced controllers from the military and private industries.
+                        </p>
+                        <p>
+                            Earlier this year, the FAA also approved 169 new and more efficient flight routes along the East Coast in an effort to ease congestion. These are mostly flown above 18,000 feet in altitude and primarily operate along the East Coast and over the Atlantic Ocean and the Gulf of Mexico.
+                        </p>
+                        <span class="sub-description">By Alison Fox, Trojan X</span>
+                        <span class="sub-description">Published on November 21, 2023</span>
+                    </div>
+                </div>
+
+                <div id="six" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Travel06.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Here's When Venice’s Day Trip Fee Will Go Into Effect</h3>
+                        <p>
+                            Venice will start implementing its long-planned fee for day visitors starting in April 2024. 
+                        </p>
+                        <p>
+                            The fee, which was first floated as an idea in 2019 but postponed several times, will initially be in effect for 29 days and cover most weekends from April 25, 2024, to mid-July, Reuters reported. The fee will apply to travelers who visit Venice from 8:30 a.m. to 4 p.m. each day it is in effect.
+                        </p>
+                        <p>
+                            "It is the first time in the world that you do something like this, you make a city bookable," Mayor Luigi Brugnaro told the wire service, adding “We want to measure the effect of this trial, we want to measure the effect of this bookability.”
+                        </p>
+                        <p>
+                            The fee will cost €5 ($5.46) per person and will be imposed on all travelers over 14 years old who visit the famous canal city for the day. Travelers under 14 will still need to register, but are exempt from the cost of the fee.
+                        </p>
+                        <p>
+                            Tickets to visit the city will be sold through an online platform that should be ready by January, according to The Local Italy. Travelers will then receive a QR code to be checked at specific entry points, Reuters reported.
+                        </p>
+                        <p>
+                            The fee will not apply to overnight visitors who book a hotel stay since they are already subject to a different tax. Travelers will also not need to pay the fee to visit the area’s smaller islands like Murano, known for its glass, Reuters noted.
+                        </p>
+                        <p>
+                            Travelers who don’t pay the required fee may be subject to a sanction from €50 ($54.64) to €310 ($338.78). 
+                        </p>
+                        <p>
+                            The fee comes after UNESCO once again spared Venice from its list of world heritage sites in danger in September despite recommendations to add it.
+                        </p>
+                        <p>
+                            Venice has been in UNESCO’s crosshairs for years and was spared the same fate in 2021. Following that, the city undertook several preservation efforts, including declaring the waterways around Venice a "national monument" and banning large cruise ships from passing through its canals.
+                        </p>
+                        <span class="sub-description">By Alison Fox, Trojan X</span>
+                        <span class="sub-description">Published on November 27, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End News Details Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                Trojan X has reached out to Goose Bay Airport, which handles an average of 160,000 passengers a year, for additional information
+            </li>
+            <li>
+                Venice will start implementing its long-planned fee for day visitors starting in April 2024
+            </li>
+            <li>
+                The Federal Aviation Authority (FAA) is working to minimize potential disruptions over the holidays by implementing contingency plans in advance
+            </li>
+            <li>
+                Alaska Airlines has launched a new partnership with a Canadian airline, soon benefitting passengers across both sides of the border
+            </li>
+            <li>
+                Delta Flight 135, carrying 270 customers, three pilots and seven flight attendants from Amsterdam to the US, made the unexpected overnight detour to Happy Valley-Goose Bay in the Canadian province of Newfoundland and Labrador “out of an abundance of caution,” Delta said in a statement
+            </li>
+            <li>
+                Beginning in January, regional airline Canada's Porter Airlines will team up with Alaska to launch flights from its main hub in Toronto to both Los Angeles and San Francisco, Alaska Airlines announced this week
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        // Show ScrollToTop Button
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const urlContent = new URLSearchParams(window.location.search);
+
+            const newsIndex = urlContent.get('newsIndex');
+
+            if (newsIndex !== null) {
+                showBox(parseInt(newsIndex, 10));
+            }
+        });
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

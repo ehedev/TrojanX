@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport News | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+    
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a class="onpage" href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Sport News Section -->
+
+    <div class="container global-heading">
+        <h2 class="special-heading">Sport News</h2>
+        <p>Discover exciting world events and sports news</p>
+    </div>
+    
+    <section id="global" class="global sport">
+        <div class="global-container sport-container">
+            <div class="global-timeline sport-timeline">
+                <div class="global-content sport-content">
+                    <a href="#one" onclick="showBox(0)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/Sport01.png" alt="">
+                        <div class="sport-info global-info">
+                            <p>United suffer European exit to a Bayern</p>
+                        </div>
+                    </div></a>
+                    <a href="#two" onclick="showBox(1)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/Sport02.png" alt="">
+                        <div class="sport-info global-info">
+                            <p>How United's worst-ever Champions League campaign</p>
+                        </div>
+                    </div></a>
+                    <a href="#three" onclick="showBox(2)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/sport03.png" alt="">
+                        <div class="sport-info global-info">
+                            <p>DANI BAIJENS: The Mood Maker Becomes A Team Leader</p>
+                        </div>
+                    </div></a>
+                    <a href="#four" onclick="showBox(3)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/sport04.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Los Angeles Lakers win NBA's inaugural In-Season Tournament</p>
+                        </div>
+                    </div></a>
+                    <a href="#five" onclick="showBox(4)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/sport05.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Egypt Win 2023 WSF Men’s World Team Championship</p>
+                        </div>
+                    </div></a>
+                    <a href="#six" onclick="showBox(5)">
+                    <div class="global-card sport-card">
+                        <img src="../Media/sport06.png" alt="">
+                        <div class="travel-info global-info">
+                            <p>Rangers cap championship season with 6 All-MLB selections</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Sports News Section -->
+
+    <!-- Start News Details Section -->
+    
+    <section class="details-section">
+        <div class="container">
+            <div class="news-details">
+                <div id="one" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport01.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>United suffer European exit to a Bayern side who are a good version of whatever it is the hosts are trying to piece together</h3>
+                        <p>
+                            Manchester United's season has gone from bad to worse as they have crashed out of Europe altogether with a 1-0 defeat against Bayern Munich.
+                        </p>
+                        <p>
+                            The Red Devils needed to beat the German giants and hope that Galatasaray's clash away at Copenhagen ended in a draw for them to secure their entry in the Champions League knockout stage.
+                        </p>
+                        <p>
+                            But Erik ten Hag's side failed to create anything of note against the Bavarian outfit at Old Trafford, with Kingsley Coman's 70th minute strike condemning them to bottom spot in Group A.
+                        </p>
+                        <p>
+                            It was the 15th goal that the hosts have conceded from their six matches - the most of any English side in the group stages of the European Cup.
+                        </p>
+                        <p>
+                            And it was a goal that was beautifully created by Harry Kane on his return to England following his summer switch from Tottenham
+                        </p>
+                        <p>
+                            The Three Lions skipper gloriously found the run of the French winger with the outside of his right boot, with Coman firing past Andre Onana into the bottom left corner.
+                        </p>
+                        <p>
+                            Ten Hag would have been hoping for a positive reaction from his men following the humiliating 3-0 defeat against Bournemouth last weekend.
+                        </p>
+                        <p>
+                            But his side had no answer in breaking down a resilient Bayern side, who have bounced back from their 5-1 drubbing at Eintracht Frankfurt on Saturday.
+                        </p>
+                        <p>
+                            In the end, victory for United wouldn't have sealed their passage into the next round as Copenhagen beat their Turkish opponents to earn second spot behind Bayern.
+                        </p>
+                        <p>
+                            However, a win would have seen them gain entry into the Europa League knockout play-off round.
+                        </p>
+                        <p>
+                            Trojan X has reached out to Goose Bay Airport, which handles an average of 160,000 passengers a year, for additional information.
+                        </p>
+                        <span class="sub-description">By cris syri, Trojan X</span>
+                        <span class="sub-description">Published on December 13, 2023</span>
+                    </div>
+                </div>
+
+                <div id="two" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport02.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>How Manchester United's worst-ever Champions League campaign unfolded</h3>
+                        <p>
+                            Manchester United's return to the Champions League was part of the body of work that suggested Erik ten Hag was the transformative figure who had blown the cobwebs away from a dilapidated Old Trafford.
+                        </p>
+                        <p>
+                            It was meant to be proof that United were back where they belonged after the missteps and misery of Louis van Gaal, Jose Mourinho - even though he won the League Cup and Europa League - and latterly Ole Gunnar Solskjaer.
+                        </p>
+                        <p>
+                            Ten Hag even had tangible success with a League Cup win in his first season, but if this wretched Champions League campaign has been any measure of the current status of Manchester United and their manager, the great transformer is now closer to being a busted flush. 
+                        </p>
+                        <p>
+                            This has been a shocking campaign, a chastening dose of cold reality that saw United finish bottom of a group they would have welcomed when the draw was made, fourth behind Bayern Munich, FC Copenhagen and Galatasaray.
+                        </p>
+                        <p>
+                            The Champions League is the most unforgiving of environments. Every United flaw, and they are certainly not short of them, has been brutally exposed from the start. 
+                        </p>
+                        <p>
+                            And it all ended in the most timid of circumstances, a United side who should have come out swinging losing 1-0 to a Bayern side with nothing to play for, Ten Hag's players mustering a mere one shot on target in the process.
+                        </p>
+                        <p>
+                            It was all a far cry from the Old Trafford nights of old when supporters were glued to their seats until the final whistle sounded.
+                        </p>
+                        <p>
+                            Thousands of United fans had given up and left long before the end here and who could blame them?
+                        </p>
+                        <p>
+                            The statistics damn United and underline the lack of organisation, tactical acumen, nous and basic quality that have characterised their Champions League return and most of their season.
+                        </p>
+                        <p>
+                            United's four points from six games is their lowest in any Champions League campaign, while the 15 goals conceded is the most by a Premier League side in any group stage of the competition.
+                        </p>
+                        <p>
+                            All manner of inquests into this dismal failure can be conducted, but the bottom line is this Manchester United side are not fit for the purpose of success - a problem exacerbated by an uncanny knack of blasting themselves in both feet at the worst possible time.
+                        </p>
+                        <p>
+                            Goalkeeper Andre Onana has had a nightmare campaign, at fault in the 4-3 loss away to Bayern, poor in the home defeat against Galatasaray then quite simply awful in the 3-3 draw with the Turkish side in Istanbul, gifting Hakim Ziyech two goals from routine free-kicks. That was a result that ensured even victory here against Bayern might not have been enough for United.
+                        </p>
+                        <p>
+                            As it was, United never even threatened to keep their own side of the bargain.
+                        </p>
+                        <p>
+                            Andre Onana managed the post as Manchester United conceded 15 goals from their six matches
+                        </p>
+                        <p>
+                            Few tears were shed when goalkeeper David de Gea left United after 12 years last summer, but Onana has done nothing to suggest the Spaniard has been adequately replaced.
+                        </p>
+                        <p>
+                            United held a two-goal lead before losing 4-3 in Copenhagen and twice held a similar advantage before sharing the points when visiting Galatasaray.
+                        </p>
+                        <p>
+                            There was a lack of discipline as Marcus Rashford was sent off with United 2-0 up in Denmark, the inexplicable catalyst for a collapse from a position of control to another damaging defeat
+                        </p>
+                        <p>
+                            All in all, United's Champions League comeback has been a shambles.
+                        </p>
+                        <span class="sub-description">By Jak Mark, Trojan X</span>
+                        <span class="sub-description">13th December 2023</span>
+                    </div>
+                </div>
+
+                <div id="three" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport03.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>The Executive Committee of the Asian Handball Federation (AHF) is pleased to announce the hosting rights for the 10th Asian Men’s Youth U-19 Handball Championship has been awarded to the Iran Handball Federation</h3>
+                        <p>
+                            The 10th Asian Men’s Youth U-19 Handball Championship is slated for 25 August – 3 September 2024 in Tehran, the capital and largest city of Iran.
+                        </p>
+                        <p>
+                            The tournament in Tehran will not only showcase youthful talent but also serve as a qualification event for the 11th IHF Men’s Youth U-19 Handball World Championship in Slovenia in July/August 2025.
+                        </p>
+                        <p>
+                            These championships promise thrilling matches and a display of exceptional handball skills, further solidifying the AHF’s commitment to promoting the sport across the Asian continent.
+                        </p>
+                    
+                        <span class="sub-description">By TEHRAN, Trojan X</span>
+                        <span class="sub-description">Published 1:05 PM EST, sat December 16, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="four" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport04.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>The Los Angeles Lakers are the NBA's inaugural In-Season Tournament champions</h3>
+                        <p>
+                            On Saturday night, the Lakers defeated the Indiana Pacers, 123-109, at the T-Mobile Arena in Las Vegas to earn the NBA Cup and a $500,000 prize for every player on their roster. 
+                        </p>
+                        <p>
+                            LeBron James was named the In-Season Tournament MVP after contributing 24 points, 11 rebounds, 4 assists and 2 steals, while shooting 47.6% from the field. Anthony Davis dominated in his 41 minutes, finishing with 41 points, 20 rebounds, 5 assists and 4 blocks, while shooting 66.7% from the field. Also, Austin Reaves scored an efficient 28 points in 28 minutes off the bench.
+                        </p>
+                        <p>
+                            Tyrese Haliburton, who was terrific throughout the tournament, led the Pacers with 20 points, 11 assists, a steal and a block in the losing effort. He shot 57.1% from the field, but struggled from long range (hitting just 2-of-8 three-point attempts). 
+                        </p>
+                        <p>
+                            Neither the Lakers nor Pacers had lost an In-Season Tournament game prior to the championship matchup.
+                        </p>
+                        <p>
+                            Los Angeles currently has the fourth-best record (14-9) in the Western Conference. The Lakers boast the NBA's ninth-best defense (allowing 108.8 points per 100 possessions) and 23rd-ranked offense (scoring 109 points per 100 possessions).
+                        </p>
+                        <span class="sub-description">By James Jon, Trojan X</span>
+                        <span class="sub-description">Published on December 10, 2023</span>
+                    </div>
+                </div>
+
+                <div id="five" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport05.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Egypt have won their third consecutive WSF Men’s World Team Championship</h3>
+                      <p>
+                        Egypt have won their third consecutive WSF Men’s World Team Championship after a thrilling contest with England in the final in Tauranga, New Zealand.
+                      </p>
+                      <p>
+                        That win for Egypt, a high-quality affair clinched by World No.4 Mostafa Asal and World No.1 Ali Farag, was also their third consecutive victory over England in a final, and the fifth final in a row to feature two of the modern game’s great rivals.
+                      </p>
+                      <p>
+                        Going into his match with World No.8 Marwan ElShorbagy, questions had been raised about the fitness of 22-year-old Mostafa Asal, with the former World No.1 a surprise omission from yesterday’s semi-final victory over Switzerland.
+                      </p>
+                      <p>
+                        Today, though, those questions were firmly answered by a brilliantly controlled performance from Asal.
+                      </p>
+                      <p>
+                        In a competitive and thoroughly entertaining contest, ‘The Raging Bull’ proved too strong for ElShorbagy, who despite putting in an excellent performance could not match the pace, power and accuracy of an inspired Asal, with the Egyptian clinching a trio of 11-9 wins to take the match 3-0 in 49 minutes.
+                      </p>
+                      <p>
+                        This left Marwan’s brother, Mohamed, needing a win over old rival and World No.1 Ali Farag to keep England in the tie.
+                      </p>
+                      <p>
+                        In a pulsating battle, the 30th between the two since the 2010 British Junior Open, the Beast’ took the lead with a hard-fought 11-8 win.
+                      </p>
+                      <p>
+                        Farag responded with a dominant 11-2 victory in game two, only for the resurgent ElShorbagy to regain the lead when he took a fiercely contested third game 11-7.
+                      </p>
+                      <p>
+                        Farag, winner of six of the last seven contests between the two, came back once again in a stop-start fourth game to force ElShorbagy into a fifth game.
+                      </p>
+                      <p>
+                        In a tense battle, which neither man deserved to lose, it was Farag who was able to maintain his concentration, with the 31-year-old controlling the court masterfully as he got his side over the line with an 11-7 win to close out a classic 70-minute encounter.
+                      </p>
+                      <p>
+                        After his team were presented with their medals by WSF Vice President and four-time World Champion Dame Susan Devoy and 1986 World Champion Ross Norman, Egypt coach Hesham El Attar said: “It’s absolutely amazing! There was a lot of tension; I know it was slightly expected that we had to deliver, but we wanted it badly.
+                      </p>
+                      <p>
+                        “That expectation creates extra pressure. We had to distract ourselves with daily routine and not think too far ahead. One hour at a time.”
+                      </p>
+                      <p>
+                        “As everyone knows, anything can happen and as we saw in the matches it was very tense and rallies were very close.
+                      </p>
+                      <p>
+                        “Ali felt that responsibility and at one point wasn’t very happy with his game. He had to make some changes and then went back, and his retrieving was amazing.
+                     </p>
+                      <p>
+                        “It’s a wonderful feeling and it hasn’t quite sunk in yet.”
+                      </p>
+                        <span class="sub-description">By John tirey, Trojan X</span>
+                        <span class="sub-description">Published on December 17, 2023</span>
+                    </div>
+                </div>
+
+                <div id="six" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Sport06.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>ARLINGTON -- The honors keep coming in for the World Series champion Texas Rangers</h3>
+                        <p>
+                            ARLINGTON -- The honors keep coming in for the World Series champion Texas Rangers as the All-MLB Teams presented by MGM Rewards were announced on Saturday night. Six Rangers received All-MLB honors: Corey Seager and Marcus Semien on the First Team and Jonah Heim, Adolis García, Nathan Eovaldi and Jordan Montgomery on the Second Team.
+                        </p>
+                        <p>
+                            All-MLB honors recognize the best players at each position across the Majors. The teams were selected by a combination of fan voting and a panel of media members, broadcasters, former players and other officials throughout the game.
+                        </p>
+                        <p>
+                            Seager and Semien -- who finished second and third in AL MVP voting -- both started for the American League in the 2023 All-Star Game and led the Rangers to the postseason for the first time since 2016. Both won Silver Slugger Awards at their respective positions while also being named finalists for Gold Glove Awards.
+                        </p>
+                        <p>
+                            Seager had one of the best offensive seasons of his career despite playing just 119 games due to two stints on the injured list. He finished second in the AL in batting average (.327), slugging percentage (.623) and OPS (1.013), while also racking up 33 home runs and 96 RBIs.
+                        </p>
+                        <p>
+                            Semien led the AL in plate appearances (753), at-bats (670), runs (122) and hits (185) while playing all 162 regular-season games.
+                        </p>
+                        <p>
+                            Heim was the All-Star starter at catcher while also winning the Gold Glove Award at the position. Heim threw out a career-high 24 of 84 (29%) attempted basestealers, the highest caught-stealing percentage among AL catchers. Per Statcast, his 10 catcher framing runs ranked third in MLB. Seen as a defense-first catcher, Heim stepped up his offense in 2023. In his first year as the primary catcher for the Rangers, he hit .258 with a .755 OPS in 131 games.
+                        </p>
+                        <p>
+                            García logged his second career All-Star appearance in 2023, as he hit .245/.328/.508 with 39 home runs. He also won his first career Gold Glove Award with a team-best 11 outfield assists this season, good for third in the AL. He ranked third among qualified MLB right fielders in defensive runs saved (7).
+                        </p>
+                        <p>Eovaldi became the de facto ace of the Rangers’ staff after Jacob deGrom went down for the season with UCL surgery. He posted a 3.63 ERA, though pitched just 144 innings after missing August with a right forearm strain.
+                        </p>
+                        <p>
+                            Montgomery, whom the Rangers acquired in a Trade Deadline deal with the Cardinals, became a steadying force in the rotation down the stretch. He posted a 2.79 ERA in 67 2/3 innings for the Rangers, good for a 3.20 ERA in 32 starts on the season.
+                        </p>
+                        <span class="sub-description">By Kennedi Landry, Trojan X</span>
+                        <span class="sub-description">Published on December 17, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End News Details Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                Farag responded with a dominant 11-2 victory in game two, only for the resurgent ElShorbagy to regain the lead when he took a fiercely contested third game 11-7
+            </li>
+            <li>
+                Rebecca Welch to be first female Premier League referee and Sam Allison to be first Black top-flight referee in 15 years
+            </li>
+            <li>
+                Egypt have won their third consecutive WSF Men’s World Team Championship after a thrilling contest with England in the final in Tauranga, New Zealand
+            </li>
+            <li>
+                On Saturday night, the Lakers defeated the Indiana Pacers, 123-109, at the T-Mobile Arena in Las Vegas to earn the NBA Cup and a $500,000 prize for every player on their roster
+            </li>
+            <li>
+                Goalkeeper Andre Onana has had a nightmare campaign, at fault in the 4-3 loss away to Bayern, poor in the home defeat against Galatasaray then quite simply awful in the 3-3 draw with the Turkish side in Istanbul, gifting Hakim Ziyech two goals from routine free-kicks. That was a result that ensured even victory here against Bayern might not have been enough for United
+            </li>
+            <li>
+                Manchester United's season has gone from bad to worse as they have crashed out of Europe altogether with a 1-0 defeat against Bayern Munich
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const urlContent = new URLSearchParams(window.location.search);
+
+            const newsIndex = urlContent.get('newsIndex');
+
+            if (newsIndex !== null) {
+                showBox(parseInt(newsIndex, 10));
+            }
+        });
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

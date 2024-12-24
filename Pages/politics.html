@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics News | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a class="onpage" href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Politics News Section -->
+
+    <div class="container global-heading">
+        <h2 class="special-heading">Politics News</h2>
+        <p>Discover exciting world events and Politics news</p>
+    </div>
+    
+    <section id="global" class="global politics">
+        <div class="global-container politics-container">
+            <div class="global-timeline politics-timeline">
+                <div class="global-content politics-content">
+                    <a href="#one" onclick="showBox(0)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics01.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>Biden’s democracy pledge is in danger</p>
+                        </div>
+                    </div></a>
+                    <a href="#two" onclick="showBox(1)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics02.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>Impeachment inquiry threatens Biden with election-year headache</p>
+                        </div>
+                    </div></a>
+                    <a href="#three" onclick="showBox(2)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics03.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>Crisis will test whether Biden can make experience an asset</p>
+                        </div>
+                    </div></a>
+                    <a href="#four" onclick="showBox(3)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics04.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>Putin warns of problems with neighboring Finland</p>
+                        </div>
+                    </div></a>
+                    <a href="#five" onclick="showBox(4)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics05.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>The Most Powerful Anti-Trump in the GOP Has Evaporated</p>
+                        </div>
+                    </div></a>
+                    <a href="#six" onclick="showBox(5)">
+                    <div class="global-card politics-card">
+                        <img src="../Media/Politics06.png" alt="">
+                        <div class="politics-info global-info">
+                            <p>White House race to reach a border deal, with Ukraine aid</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Politics News Section -->
+
+    <!-- Start News Details Section -->
+    
+    <section class="details-section">
+        <div class="container">
+            <div class="news-details">
+                <div id="one" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics01.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Biden’s democracy pledge is in danger</h3>
+                        <p>
+                            The organizing principle of Joe Biden’s presidency has been standing up for the idea of democracy.
+                        </p>
+                        <p>
+                            His political campaigns are built on defending democracy at home, versus would-be election sidestepper Donald Trump.
+                        </p>
+                        <p>
+                            Much of his presidency is built on defending democracy abroad, versus Ukraine invader Vladimir Putin, among others.
+                        </p>
+                        <p>
+                            US democracy is messy
+                        </p>
+                        <p>
+                            There are cascading frustrations this week – on both the domestic and foreign fronts – to test Biden’s promise that democracies will win over autocracies.
+                        </p>
+                        <p>
+                            Ukrainian President Volodymyr Zelensky failed to change minds about further US aid despite paying personal visits to US lawmakers on Capitol Hill on Tuesday.
+                        </p>
+                        <p>
+                            Biden himself recently said at a Hanukkah event at the White House that Israel’s government, which he described as the “most conservative government in Israel’s history,” needs to change its severe campaign against Gaza.
+                        </p>
+                        <p>
+                            “The whole world’s public opinion can shift overnight, we can’t let that happen,” he said.
+                        </p>
+                        <p>
+                            Biden has previously framed the need to fund Ukraine’s fight against Russia and Israel’s fight against terrorism as part of a larger struggle in defense of democracies.
+                        </p>
+                        <p>
+                            “Hamas and (Russian President Vladimir) Putin represent different threats, but they share this in common: They both want to completely annihilate a neighboring democracy – completely annihilate it,” Biden said in October, during a prime-time pitch for aid for the two countries.
+                        </p>
+                        <p>
+                            Demands in exchange for Ukraine funding
+                        </p>
+                        <p>
+                            House Speaker Mike Johnson said in a statement after meeting with Zelensky that he supports Ukraine fighting back against Putin and promised that Americans “stand for freedom and they’re on the right side of this fight.”
+                        </p>
+                        <p>
+                            But Johnson wants some things in exchange for another $61 billion to keep the fight for freedom supplied, which is making the prospect of a deal unlikely before US lawmakers break for the holidays. Funding for Israel and border security is also caught up in the standoff.
+                        </p>
+                        <p>
+                            Appearing with Zelensky at the White House, Biden said failure to immediately pass the funding would be “the greatest Christmas gift” for Putin.
+                        </p>
+                        <p>
+                            House Republicans are demanding changes in border policy to reduce asylum-seekers and cut down on people crossing the border. But that’s not all.
+                        </p>
+                        <p>
+                            “What the Biden administration seems to be asking for is billions of additional dollars with no appropriate oversight, no clear strategy to win, and none of the answers that I think the American people are owed,” Johnson said.
+                        </p>
+                        <span class="sub-description">By cris syri, Trojan X</span>
+                        <span class="sub-description">Published on December 13, 2023</span>
+                    </div>
+                </div>
+
+                <div id="two" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics02.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Impeachment inquiry threatens Biden with election-year headache</h3>
+                        <p>
+                            By voting to formally authorise the congressional investigation into Joe Biden, Republicans in the House of Representatives have started the ball rolling towards his impeachment.
+                        </p>
+                        <p>
+                            It may be difficult to stop.
+                        </p>
+                        <p>
+                            Three of the four previous times the House took this step, the chamber ultimately opted to impeach. The one time it did not was because Richard Nixon resigned before a vote could be held.
+                        </p>
+                        <p>
+                            Republicans allege the president benefited from his family's foreign business dealings, although they have not yet produced any solid evidence that he did.
+                        </p>
+                        <p>
+                            In the short-term, the House's action gives the investigating committees more power to subpoena documents and testimony and for judges to enforce those requests. The Biden White House, which has cited the lack of a formal vote as grounds for refusing to provide some information, may now be compelled to comply.
+                        </p>
+                        <p>
+                            Ultimately, this vote could clear the path for House Republicans, despite their narrow majority, to stick together and back impeachment sometime in early 2024.
+                        </p>
+                        <p>
+                            They now are on the record agreeing to move the process forward.
+                            If centrist Republicans in congressional districts won by Mr
+                            Biden in 2020 are going to take the political hit for starting
+                            the investigation, they may conclude it is best to see it
+                            through to the end.
+                        </p>
+                        <p>
+                            The end in the House, at least. The matter would then move to
+                            the Democratic-controlled Senate, where it takes a two-thirds
+                            majority to convict and remove a president.
+                        </p>
+                        <p>
+                            That is a high bar that has never been reached for a president
+                            in US history. And at least some Republicans have expressed
+                            concern that Wednesday's vote could be another indication that
+                            the impeachment process is being diminished.
+                        </p>
+                        <p>
+                            Asa Hutchinson, a former congressman and current Republican
+                            presidential candidate, was one of the House managers who
+                            presented the case against Mr Clinton during his 1999 Senate
+                            impeachment trial.
+                        </p>
+                        <p>
+                            "Impeachment should be reserved for the most serious of
+                            offences," he told the BBC. "That's how our founding fathers
+                            designed it. We don't want to get into the tit-for-tat between
+                            the parties on impeaching the president from the opposing side.
+                            It's problematic."
+                        </p>
+                        <span class="sub-description">By Jak Mark, Trojan X</span>
+                        <span class="sub-description">13th December 2023</span>
+                    </div>
+                </div>
+                
+                <div id="three" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics03.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Mideast crisis will test whether Biden can make experience an asset</h3>
+                        <p>
+                            The escalating confrontation between Israel and Hamas is
+                            offering President Joe Biden a crucial opportunity to begin
+                            flipping the script on one of his most glaring vulnerabilities
+                            in the 2024 presidential race.
+                        </p>
+                        <p>
+                            For months, polls have consistently shown that most Americans
+                            believe Biden’s advanced age has diminished his capacity to
+                            handle the responsibilities of the presidency. But many
+                            Democrats believe that Biden’s widely praised response to the
+                            Mideast crisis could provide him a pivot point to argue that his
+                            age is an asset because it has equipped him with the experience
+                            to navigate such a complex challenge.
+                        </p>
+                        <p>
+                            “As you project forward, we are going to be able to argue that
+                            Joe Biden’s age has been central to his success because in a
+                            time of Covid, insurrection, Russian invasion of Ukraine, now
+                            challenges in the Middle East, we have the most experienced man
+                            ever as president,” said Democratic strategist Simon Rosenberg.
+                            “Perhaps having the most experienced person ever to go into the
+                            Oval Office was a blessing for the country. I think we are going
+                            to be able to make that argument forcefully.”
+                        </p>
+                        <p>
+                            Biden unquestionably faces a steep climb to ameliorate the
+                            concern that he’s too old for the job. Political strategists in
+                            both parties agree that those public perceptions are largely
+                            rooted in reactions to his physical appearance – particularly
+                            the stiffness of his walk and softness of his voice – and thus
+                            may be difficult to reverse with arguments about his
+                            performance. In a CNN poll released last month, about
+                            three-fourths of adults said Biden did not have “the stamina and
+                            sharpness to serve effectively as president” and nearly as many
+                            said he does not inspire confidence. Even about half of
+                            Democrats said Biden lacked enough stamina and sharpness and did
+                            not inspire confidence, with a preponderant majority of
+                            Democrats younger than 45 expressing those critical views.
+                        </p>
+                        <p>
+                            But the crisis in Israel shows the path Biden will probably need
+                            to follow if there’s any chance for him to transmute doubts
+                            about his age into confidence in his experience. Though critics
+                            on the left and right in American politics have raised
+                            objections, Biden’s response to the Hamas attack has drawn
+                            praise as both resolute and measured from a broad range of
+                            leaders across the ideological spectrum in both the US and
+                            Israel.
+                        </p>
+                        <span class="sub-description">By TEHRAN, Trojan X</span>
+                        <span class="sub-description">Published 1:05 PM EST, sat December 16, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="four" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics04.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Putin warns of problems with neighboring Finland after West ‘dragged it into NATO’</h3>
+                        <p>
+                            Russian President Vladimir Putin has warned there will be
+                            “problems” with neighboring Finland after it joined the North
+                            Atlantic Treaty Organization (NATO) earlier this year.
+                        </p>
+                        <p>
+                            Finland’s ascension to NATO marked a major shift in the security
+                            landscape in northern Europe, and added some 1,300 kilometers
+                            (830 miles) to the alliance’s frontier with Russia
+                        </p>
+                        <p>
+                            It was also a blow for President Putin, who has long warned
+                            against NATO expansion.
+                        </p>
+                        <p>
+                            “They (the West) took Finland and dragged it into NATO! Why, did
+                            we have any disputes with Finland? All disputes, including those
+                            of a territorial nature in the middle of the 20th Century, have
+                            all been resolved long ago,” Putin said in an interview
+                            published on Sunday.
+                        </p>
+                        <p>
+                            “There were no problems, but now there will be, because we will
+                            now create the Leningrad military district there and definitely
+                            concentrate military units there,” Putin added in the interview
+                            by Russian state broadcaster Russia 1.
+                        </p>
+                        <p>
+                            Putin also dismissed as “complete nonsense” remarks from US
+                            President Joe Biden, who earlier this month warned that Putin
+                            would “keep going” if he takes Ukraine, suggesting that Russia
+                            could eventually attack a NATO ally and draw US troops into
+                            conflict.
+                        </p>
+                        <p>
+                            The Russian leader said Russia “has no reason, no interest, no
+                            geopolitical interest, neither economic, nor political, nor
+                            military, to fight with NATO countries,” adding Moscow does not
+                            have any territorial claims in NATO countries.
+                        </p>
+                        <p>
+                            “There is no desire to spoil relations with them (NATO
+                            countries), we are interested in developing relations,” Putin
+                            added.
+                        </p>
+                        <span class="sub-description">By James Jon, Trojan X</span>
+                        <span class="sub-description">Published on December 10, 2023</span>
+                    </div>
+                </div>
+                
+                <div id="five" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics05.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>Opinion | The Most Powerful Anti-Trump Argument in the GOP Has Evaporated</h3>
+                        <p>
+                            Joe Biden has done Donald Trump the enormous favor of collapsing
+                            before our eyes.
+                        </p>
+                        <p>
+                            As the 2024 GOP presidential race heads into the first contests,
+                            Biden’s abysmal run of polling has boosted Trump and undercut
+                            his Republican opponents by hanging a neon sign on our politics
+                            reading, “TRUMP CAN WIN
+                        </p>
+                        <p>
+                            It may be that Trump, such is his hold on GOP voters, didn’t
+                            need any help establishing a dominant position in the fight for
+                            the Republican nomination, but two exogenous events have boosted
+                            him.
+                        </p>
+        
+                        <p>
+                            First, the indictments from the Justice Department and
+                            Democratic prosecutors created a predictable rally-around-Trump
+                            effect that put him on a fundamentally higher trajectory in the
+                            race, and second, Biden’s execrable polling has completely
+                            eliminated any possibility of making an electability argument
+                            against Trump.
+                        </p>
+                        <p>
+                            There’s picking your opponent through underhanded ads —
+                            something Democrats did to help get vulnerable MAGA opponents in
+                            2022 — and then there’s picking your opponent through your own
+                            incredible weakness that makes him look even more alluring to
+                            his partisans.
+                        </p>
+                        <p>
+                            The most salient doubt about Trump among on-the-fence
+                            Republicans has never been his policy priorities, governing
+                            effectiveness or conduct after the 2020 election, but his
+                            ability to win.
+                        </p>
+                        <p>
+                            Trump’s standing in the party was shaken after the 2022
+                            elections when Republicans underperformed, and he had his
+                            fingerprints on the disappointment. The Ron DeSantis landslide
+                            in Florida created a contrast that seemingly opened a vista for
+                            an intuitive, winning argument — stick with Trump and lose, or
+                            go with the young, fresh governor and win.
+                        </p>
+                        <p>
+                            The electability argument also had the advantage of
+                            side-stepping any of the issues about Trump that most
+                            Republicans don’t want to hear. Saying he can’t win isn’t a
+                            critique of him personally or anything he wants to do. It’s a
+                            practical claim, not a moral one. And it can be offered more in
+                            a tone of sorrow than anger.
+                        </p>
+                        <p>
+                            The problem is that the polling hasn’t cooperated, thanks to
+                            Biden’s downward spiral.
+                        </p>
+                        <p>
+                            In 2016, Trump was often reduced to citing Drudge polls and
+                            other dubious sources to try to demonstrate what he’s always
+                            maintained is his overwhelming public support. This time around,
+                            he can cite the most reputable polls in the business.
+                        </p>
+                        <p>
+                            The Biden collapse is nearly comprehensive. He is losing in
+                            ballot tests to Trump, his approval rating is scraping bottom,
+                            he’s trailing on almost every top issue, and super-majorities
+                            think he’s too old to serve again.
+                        </p>
+                        <p>
+                            He is the weakest incumbent since Jimmy Carter or George H.W.
+                            Bush.
+                        </p>
+                        <p>
+                            The latest Wall Street Journal poll has Trump leading Biden by 4
+                            points in a hypothetical two-way race, and 6 in a
+                            multi-candidate field. Only 37 percent approve of Biden’s job
+                            performance, while 61 percent disapprove. Fewer than 30 percent
+                            of voters approve of “Bidenomics.”
+                        </p>
+                        <p>
+                            Trump leads by double digits on the economy, inflation, crime,
+                            the Ukraine and Gaza wars, and the border. He leads by 34 points
+                            on having the physical stamina to do the job, and 16 points on
+                            being mentally up for the job. And people think Trump policies
+                            helped them by 49-37 percent, and Biden hurt them by 25-53.
+                        </p>
+                        <p>
+                            Is this just early, showy, unsustainable Trump support? Maybe.
+                            But Trump never led in 2020 polling
+                        </p>
+                        <p>
+                            As if to provide a punctuation mark on the Wall Street Journal
+                            poll, CNN came out with a survey that showed Trump leading by 5
+                            points in Georgia and a jaw-dropping 10 points in Michigan.
+                        </p>
+                        <p>
+                            Republican voters already had an exaggerated sense of Trump’s
+                            electoral prowess, but many of them are probably ready to
+                            conclude they could run Perry Johnson or Ryan Binkley next year
+                            and win. Why worry — about what might happen to Trump next year
+                            at trial, or his underwhelming electoral history, or the effects
+                            he has in the suburbs — when 2024 is a lock?
+                        </p>
+                        <p>
+                            Republican voters have long considered Trump the strongest
+                            general election candidate. Still, he’s been gaining on this
+                            metric. A recent Monmouth poll found that 54 percent of
+                            Republicans think Trump would be the strongest candidate, up
+                            from 48 percent in September and 45 percent in July. Even 41
+                            percent of Republicans supporting other candidates think Trump
+                            would be strongest.
+                        </p>
+                        <span class="sub-description">By John tirey, Trojan X</span>
+                        <span class="sub-description">Published on December 17, 2023</span>
+                    </div>
+                </div>
+
+                <div id="six" class="box-section">
+                    <div class="side-one">
+                        <img src="../Media/Politics06.png">
+                        <span class="close-btn" onclick="closeBox()">X</span>
+                    </div>
+                    <div class="side-two">
+                        <h3>White House and Senate negotiators race to reach a border deal, with Ukraine aid on the line</h3>
+                        <p>
+                            Democrats and Republicans will not be able to strike a deal on
+                            US southern border policy changes this year, GOP Sen. Lindsey
+                            Graham said Sunday, following weeks of negotiations over tying
+                            tighter immigration restrictions to supplemental funding for
+                            Ukraine and Israel.
+                        </p>
+                        <p>
+                            Republicans, Graham said during an appearance on NBC’s “Meet the
+                            Press,” “feel that we’re being jammed. We’re not anywhere close
+                            to a deal. It’ll go into next year.”
+                        </p>
+                        <p>
+                            Democrats and Republicans are urgently trying to reach an
+                            agreement on border policy changes before senators leave town
+                            for the holidays, but several congressional aides are skeptical
+                            a deal can be reached as sizable differences remain.
+                        </p>
+                        <p>
+                            President Joe Biden has repeatedly called on Congress to pass
+                            his national security supplemental funding request, which
+                            includes billions for Ukraine, Israel and border security, among
+                            other priorities. He’s warned that the funds are imperative for
+                            Ukraine, which the US has pledged to support in defending
+                            against Russia, and more broadly, for US national security.
+                        </p>
+                        <p>
+                            For weeks, negotiators on both sides of the aisles have wrestled
+                            over tying tighter immigration restrictions to supplemental
+                            funding for Ukraine and Israel. Republicans insist there needs
+                            to be a change on the US southern border, where migrant surges
+                            have strained federal resources, to move forward with funding
+                            for Ukraine.
+                        </p>
+                        <p>
+                            “This is a catastrophe, and it’s a result of the Biden open
+                            border policies,” Sen. John Cornyn of Texas said on “Fox News
+                            Sunday.” “We’re going to use this opportunity to change that.”
+                        </p>
+                        <p>
+                            In a sign of the challenges negotiators face in trying to get an
+                            immigration deal that can pass the Senate this week, 15 GOP
+                            senators, including Graham, are demanding a special conference
+                            meeting in January to discuss the negotiations. In a letter sent
+                            Sunday to Sen. John Barrasso of Wyoming, chair of the Senate
+                            Republican Conference, the senators criticized the “rushed and
+                            secret” talks.
+                        </p>
+                        <p>
+                            Sen. James Lankford of Oklahoma, the top Republican at the
+                            negotiation table for border talks, said he thinks meeting to
+                            discuss the legislation when the House returns the week of
+                            January 8 is a “realistic timeline.”
+                        </p>
+                        <p>
+                            Senate Majority Leader Chuck Schumer has insisted the chamber
+                            will hold a vote on the legislation this week – but Lankford
+                            noted senators still do not have legislative text.
+                        </p>
+                        <p>
+                            “That’s up to Leader Schumer, but we don’t have text. So,
+                            there’s no text to be able to have a vote on,” he said, adding
+                            that senators will meet again Monday.
+                        </p>
+                        <span class="sub-description">By Kennedi Landry, Trojan X</span>
+                        <span class="sub-description">Published on December 17, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End News Details Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                Republicans allege the president benefited from his family's foreign business dealings, although they have not yet produced any solid evidence that he did
+            </li>
+            <li>
+                Democrats and Republicans will not be able to strike a deal on US southern border policy changes this year, GOP Sen
+            </li>
+            <li>
+                For weeks, negotiators on both sides of the aisles have wrestled over tying tighter immigration restrictions to supplemental funding for Ukraine and Israel
+            </li>
+            <li>
+                Republicans, Graham said during an appearance on NBC’s “Meet the Press,” “feel that we’re being jammed. We’re not anywhere close to a deal. It’ll go into next year.”
+            </li>
+            <li>
+                Trump leads by double digits on the economy, inflation, crime, the Ukraine and Gaza wars, and the border
+            </li>
+            <li>
+                Joe Biden has done Donald Trump the enormous favor of collapsing before our eyes
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        // Show ScrollToTop Button
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const urlContent = new URLSearchParams(window.location.search);
+
+            const newsIndex = urlContent.get('newsIndex');
+
+            if (newsIndex !== null) {
+                showBox(parseInt(newsIndex, 10));
+            }
+        });
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

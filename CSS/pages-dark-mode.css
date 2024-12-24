@@ -1,0 +1,88 @@
+/* News Pages */
+
+body {
+    background-color: var(--sectionColor);
+}
+
+.global .global-timeline .global-content,
+.details-section .news-details .box-section {
+    box-shadow: 0 0 14px 3px var(--mainColor)
+}
+
+.global .global-timeline .global-content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, transparent, #c0c0c0);
+}
+
+.global .global-timeline .global-content::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, transparent, #656565);
+}
+
+/* News Pages */
+
+/* Start About Us Page */
+
+.about-us {
+    background-color: #131313;
+}
+
+.about-us .about-content h2,
+.terms .terms-container .term-content h2,
+.contact-us .content .info h4,
+.details-section .news-details .box-section .side-two h3 {
+    color: #D5D5D5;
+    text-shadow: 0 0 3px #D5D5D5;
+}
+
+.about-us .about-content p,
+.terms .terms-container .term-content p,
+.details-section .news-details .box-section .side-two p {
+    color: #C2C2C2;
+    text-shadow: 0 0 2px #C2C2C2;
+}
+
+.about-us .about-content li,
+.terms .terms-container .term-content li {
+    color: #C0C0C0;
+}
+
+.team,
+.terms,
+.contact-us {
+    background-color: var(--sectionColor);
+}
+
+.team .team-container .team-card {
+    box-shadow: 0 0 7px var(--mainColor);
+}
+
+/* End About Us Page */
+
+/* Start Terms Page */
+
+.terms .terms-container hr {
+    border: 1px solid var(--mainColor);
+}
+
+/* End Terms Page */
+
+/* Start Contact US Page */
+
+.contact-us .contact-map {
+    box-shadow: 0 0 10px var(--mainColor);
+    border-radius: 25px;
+}
+
+.contact-us .contact-map iframe {
+    border-radius: 25px;
+}
+
+.contact-us .content form .contact-input {
+    background-color: #2A2A2A;
+    color: var(--mainColor);
+}
+
+.contact-us .content form .contact-input:focus {
+    outline: 1px solid var(--mainColor);
+}
+
+/* End Contact US Page */
