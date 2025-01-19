@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="../CSS/all.min.css">
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/contact-us.css">
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .d-none {
+            display: none;
+        }
+        .alert-success {
+            color: green;
+        }
+        .alert-danger {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
@@ -87,6 +101,7 @@
 
     <!-- Start Contact US Section -->
     
+    
     <section class="contact-us">
         <div class="container">
             <h2 class="special-heading">Get In Touch</h2>
@@ -105,13 +120,18 @@
                 </div>
             </div>
             <div class="content">
-                <form action="">
+                <form name="TrojanX Contact Form" method="POST" id="contactForm" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+                    <input name="bot-field" style="display:none;">
                     <div class="main-contact">
-                        <input class="contact-input" type="text" name="name" placeholder="Your Name">
-                        <input class="contact-input" type="email" name="email" placeholder="Your Mail">
+                        <input class="contact-input" type="text" name="Full Name" placeholder="Your Name">
+                        <input class="contact-input" type="email" name="Email Address" placeholder="Your Mail">
                     </div>
-                    <input class="contact-input" type="text" name="subject" placeholder="Subject">
-                    <textarea class="contact-input" name="message" placeholder="Type Message Here..."></textarea>
+                    <input class="contact-input" type="text" name="Subject" placeholder="Subject">
+                    <textarea class="contact-input" name="Message | Notes" placeholder="Type Message Here..."></textarea>
+                    <!-- Confirmation Message -->
+                    <div id="confirmationMessage" class="text-center d-none">
+                        <div class="alert" role="alert"></div>
+                    </div>
                     <input type="submit" value="Send">
                 </form>
                 <div class="info">
@@ -244,6 +264,66 @@
         }
 
         // Dark Mode Codes
+
+        let form = document.getElementById("contactForm");
+
+        async function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            let confirmationMessage = document.getElementById("confirmationMessage"); // Select the confirmation message div
+            let alertBox = confirmationMessage.querySelector('.alert'); // Get the alert box inside the div
+            let data = new FormData(event.target); // Form data
+
+            // Show the confirmation message div
+            confirmationMessage.classList.remove('d-none');
+
+            // Smooth scroll to the confirmation message with a 50px offset
+            const rect = confirmationMessage.getBoundingClientRect();
+            const offset = window.scrollY + rect.top - 100;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+
+            try {
+                // Send the form data using fetch
+                let response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                });
+
+                if (response.ok) {
+                    // Update alert box to show success message
+                    alertBox.classList.remove('alert-danger');
+                    alertBox.classList.add('alert-success');
+                    alertBox.innerHTML = "Thank you! We will be in touch with you very soon.";
+                    form.reset(); // Reset the form after successful submission
+                } else {
+                    // Handle server error
+                    alertBox.classList.remove('alert-success');
+                    alertBox.classList.add('alert-danger');
+                    let errorData = await response.json();
+                    if (errorData.errors) {
+                        alertBox.innerHTML = errorData.errors.map((err) => err.message).join(", ");
+                    } else {
+                        alertBox.innerHTML = "Oops! There was a problem submitting your form.";
+                    }
+                }
+            } catch (error) {
+                // Handle network or fetch error
+                alertBox.classList.remove('alert-success');
+                alertBox.classList.add('alert-danger');
+                alertBox.innerHTML = "Oops! There was a problem submitting your form.";
+            }
+
+            // Automatically hide the confirmation message after 3 seconds
+            setTimeout(() => {
+                this.reset();
+                confirmationMessage.classList.add('d-none');
+            }, 4000);
+        }
+
+        form.addEventListener("submit", handleSubmit);
+
     </script>
     <script src="../JS/main.js"></script>
 </body>
