@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US | Trojan X</title>
+    <link rel="icon" href="../Media/Logo.png">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/contact-us.css">
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .d-none {
+            display: none;
+        }
+        .alert-success {
+            color: green;
+        }
+        .alert-danger {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mode Settings -->
+    
+    <div class="mode-option">
+        <i title="Night Mode" class="fas fa-moon fa-2x themeChangerNight" onclick="dark()"></i>
+        <i title="Light Mode" class="fas fa-circle fa-2x themeChangerLight" onclick="light()"></i>
+    </div>
+
+    <!-- Mode Settings -->
+
+    <!-- Start Main Navbar -->
+    
+    <header>
+        <!-- <div class="christmas-container">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+            <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+        </div> -->
+        <nav>
+            <h2><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2>
+            <!-- <h2><img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""><a href="../index.html"><img id="logo" src="../Media/Logo.png">Trojan X</a></h2> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a class="onpage" href="contact-us.html">Contact Us</a></li>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+
+    <!-- End Main Navbar -->
+
+    <!-- Start Sub Navbar -->
+    
+    <div class="sub-navbar">
+        <input type="search" placeholder="Search...">
+        <nav>
+            <li class="link"><a href="politics.html">Politics</a></li>
+            <li class="link"><a href="sport.html">Sport</a></li>
+            <li class="link"><a href="games.html">Games</a></li>
+            <li class="link"><a href="space.html">Space</a></li>
+            <li class="link"><a href="travel.html">Travel</a></li>
+            <span class="link toggle-menu" onclick="showSidebar()">☰</span>
+        </nav>
+    </div>
+
+    <!-- End Sub Navbar -->
+
+    <!-- Start Main Sidebar -->
+    
+    <nav class="side-nav">
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="side-bar">
+            <!-- <div class="christmas-container">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_0.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_2.png" alt="">
+                <img class="christmas-image" src="../Media/Christmas_4.png" alt="">
+            </div> -->
+            <span class="sidebar-close" onclick="closeSidebar()">X</span>
+            <!-- <img id="christmas-logo" src="../Media/Christmas Hat.png" alt=""> -->
+            <img id="Body-Logo" src="../Media/Logo.png" alt="Trojan X">
+            <h3>Trojan <span>X</span></h3>
+            <ul>
+                <li onclick="closeSidebar()"><a href="../index.html">Home</a></li>
+                <li onclick="closeSidebar()"><a href="about-us.html">About Us</a></li>
+                <li onclick="closeSidebar()"><a href="terms.html">Terms</a></li>
+                <li onclick="closeSidebar()"><a class="onpage" href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- <img id="sidebar-christmas" src="../Media/Christmas Bottom.png" alt=""> -->
+        </div>
+    </nav>
+
+    <!-- End Main Sidebar -->
+
+    <!-- Start Contact US Section -->
+    
+    
+    <section class="contact-us">
+        <div class="container">
+            <h2 class="special-heading">Get In Touch</h2>
+            <p>We are communicative and social</p>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4555427.5300496295!2d1.7382809999999997!3d46.75984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e1!3m2!1sen!2sfr!4v1622053125465!5m2!1sen!2sfr" 
+                        width="1170" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+                <div class="map-heading">
+                    We Are Here
+                </div>
+            </div>
+            <div class="content">
+                <form name="TrojanX Contact Form" method="POST" id="contactForm" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input name="bot-field" style="display:none;">
+                    <div class="main-contact">
+                        <input class="contact-input" type="text" name="Full Name" placeholder="Your Name">
+                        <input class="contact-input" type="email" name="Email Address" placeholder="Your Mail">
+                    </div>
+                    <input class="contact-input" type="text" name="Subject" placeholder="Subject">
+                    <textarea class="contact-input" name="Message | Notes" placeholder="Type Message Here..."></textarea>
+                    <!-- Confirmation Message -->
+                    <div id="confirmationMessage" class="text-center d-none">
+                        <div class="alert" role="alert"></div>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+                <div class="info">
+                    <h4>Our Address</h4>
+                    <address>
+                        4896 Desert Broom Court<br>Newark, NJ 07102<br>United States
+                    </address>
+                    <h4>Email</h4>
+                    <a href="#">mail@mail.com</a>
+                    <h4>Phone</h4>
+                    <span class="phone">+1 (581) 890-9863</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- End Contact US Section -->
+
+    <!-- Start Trojan X News Ticker -->
+
+    <section id="news-ticker" class="news-ticker">
+        <div class="ticker-title">
+            Trojan X
+        </div>
+        <ul class="ticker-content">
+            <li>
+                SpaceX yet to select launch pad for next Axiom Space private astronaut mission
+            </li>
+            <li>
+                Rebecca Welch to be first female Premier League referee and Sam Allison to be first Black top-flight referee in 15 years
+            </li>
+            <li>
+                The epic RPG based on Dungeons and Dragons and the survival horror were the big winners at last week's Game Awards in Los Angeles
+            </li>
+            <li>
+                Germany's SPD wants tight Twitter supervision after Musk takeover
+            </li>
+            <li>
+                Italy calls for redistribution of migrants as 1,000 people wait on board
+            </li>
+            <li>
+                Vaccines for seasonal flu, COVID-19 start in Albania
+            </li>
+        </ul>
+    </section>
+
+    <!-- End Trojan X News Ticker -->
+
+    <!-- Scroll To Top Button -->
+    <span onclick="scrollToTop()" class="up">▲</span>
+    <!-- Scroll To Top Button -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Left.png">
+        <img class="footer-christmas" src="../Media/Christmas Footer Center.png">
+        <div class="christmas-respo">
+            <img class="footer-christmas-res" src="../Media/Christmas Circle.png">
+        </div> -->
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politics.html">Politics News</a></li>
+                    <li><a href="sport.html">Sport News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Games News</a></li>
+                    <li><a href="space.html">Space News</a></li>
+                    <li><a href="travel.html">Travel News</a></li>
+                </ul>
+                <hr>
+                <ul> 
+                    <li><a href="../index.html#latest-news">Latest News</a></li>
+                    <li><a href="../index.html#games-news">Top Games News</a></li>
+                    <li><a href="../index.html#editor-picks">Editor's Picks News</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>All Rights Reserved &copy; 2023 <span><a href="../index.html">Trojan X | News</a></span></p>
+        </div>
+        <!-- <img class="footer-christmas" src="../Media/Christmas Footer Right.png"> -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <script>
+        let scrollBtn = document.querySelector(".up");
+        window.onscroll = function() {
+            this.scrollY >= 850 ? scrollBtn.classList.add("reveal") : scrollBtn.classList.remove("reveal");
+        }
+
+        // Dark Mode Codes
+
+        let darkMode = localStorage.getItem('darkMode');
+
+        function dark() {
+            let head = document.getElementsByTagName('HEAD')[0]; 
+            let link = document.createElement('link'), link_pages = document.createElement('link');
+            link.rel = link_pages.rel = 'stylesheet';
+            link.type = link_pages.type = 'text/css';
+            link.href = '../CSS/dark-mode.css';
+            link_pages.href = '../CSS/pages-dark-mode.css';
+            link.setAttribute("id", "night");
+            link_pages.setAttribute("id", "night-pages");
+            head.appendChild(link);
+            head.appendChild(link_pages);
+            document.querySelector(".themeChangerNight").style.display = "none";
+            document.querySelector(".themeChangerLight").style.display = "initial";
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        function light() {
+            document.querySelector("#night").remove();
+            document.querySelector("#night-pages").remove();
+            document.querySelector(".themeChangerNight").style.display = "initial";
+            document.querySelector(".themeChangerLight").style.display = "none";
+            localStorage.setItem('darkMode', null);
+        }
+
+        if (darkMode === 'enabled') {
+            dark();
+        }
+
+        // Dark Mode Codes
+
+        const handleSubmit = event => {
+            event.preventDefault();
+
+            const myForm = event.target;
+            const formData = new FormData(myForm);
+
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(() => {
+                // Show success message in the confirmationMessage div
+                const confirmationMessage = document.getElementById("confirmationMessage");
+                confirmationMessage.classList.remove("d-none");
+                confirmationMessage.querySelector(".alert").textContent = "Thank you for your submission!";
+                })
+                .catch(error => {
+                // Show error message if the fetch fails
+                const confirmationMessage = document.getElementById("confirmationMessage");
+                confirmationMessage.classList.remove("d-none");
+                confirmationMessage.querySelector(".alert").textContent = "Something went wrong. Please try again.";
+            });
+        };
+
+        // Attach the event listener for form submission
+        document.getElementById("contactForm").addEventListener("submit", handleSubmit);
+
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
