@@ -58,7 +58,7 @@
 
 .team .team-container {
     display: var(--flexDisplay);
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .team .team-container .team-card {
