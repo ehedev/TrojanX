@@ -1,38 +1,34 @@
-# TrojanX News Website 📰⚡  
-**Your Gateway to Real-Time News!**
+# <img src="./Media/Logo.png" width="45" align="top" /> TrojanX | Global News Portal Platform
 
-## 🌟 Key Features  
-- **Real-Time Updates**: Stay ahead with instant news delivery via APIs.  
-- **User-Friendly Interface**: A sleek, responsive design for seamless browsing on any device.  
-- **Category-Wise News**: Browse by topics like Politics, Technology, Sports, and Entertainment.  
-- **Search Functionality**: Quickly find articles with our powerful search engine.  
-- **Admin Dashboard**: Manage news articles, categories, and user accounts effortlessly.  
-- **Multi-Language Support**: Read news in multiple languages for global coverage.  
-- **Dark Mode**: Enjoy a modern browsing experience with a toggleable dark theme.  
+> **Live Demo:** [https://trojanx.vercel.app]
 
-## 🔧 Tech Stack  
-- **Backend**: Python Django framework for robust and scalable server-side development.  
-- **Frontend**: HTML5, CSS3, JavaScript, and modern frameworks for a responsive UI.  
-- **Database**: PostgreSQL for structured and efficient data management.  
-- **API Integration**: Fetch live news via RESTful APIs for real-time updates.  
-- **Hosting**: Optimized for deployment on cloud platforms like AWS, Azure, or Heroku.  
+TrojanX is a comprehensive, multi-category digital news platform designed to deliver real-time global updates across diverse sectors. Engineered as a full-scale publication portal, the platform manages high volumes of distinct content types—from breaking geopolitical headlines to deep-dive aerospace features—while maintaining a cohesive and highly navigable user experience. Built entirely with vanilla web technologies, this project demonstrates a strong command of native CSS layout architecture, semantic HTML5, and core DOM manipulation without the use of external frameworks.
 
-## 🚀 How to Get Started  
-1. **Clone the Repository**:  
-   ```bash  
-   git clone https://github.com/yourusername/TrojanX.git  
-   cd TrojanX
+## 🍽️ The Content Ecosystem
+The platform routes users through dedicated, purpose-built hubs accessible via a persistent navigation system:
+* **Politics:** A dedicated feed for geopolitical shifts, government updates, and breaking international affairs.
+* **Sport:** A dynamic hub tracking athletic events, featuring high-density listicles for fast-paced updates on major global leagues.
+* **Games:** A specialized digital entertainment sector highlighting AAA releases, hardware updates, and developer news.
+* **Space:** A visual-heavy category dedicated to aerospace achievements, orbital launches, and institutional updates from organizations like NASA.
+* **Travel:** An exploration-focused segment for geographical news, global destination guides, and cultural highlights.
 
-2. **Set Up Environment**:  
-   - Install dependencies:  
-     ```bash  
-     pip install -r requirements.txt  
-     ```  
-   - Create a `.env` file in the project root and configure the following variables:  
-     ```env
-     ```
-   - Make sure your PostgreSQL database is running and accessible.  
+## ✨ Core Features & Functionality
+* **Real-Time News Ticker:** A persistent, dynamic ticker built into the header to broadcast live breaking news, keeping the user immediately informed of critical updates across the globe the moment they land on the site.
+* **Thematic UI Shifting:** Utilizes dynamic contrast and custom styling to differentiate content hubs. Standard news utilizes a stark, readable light mode, while sectors like the "Games" hub transition into an immersive, dark-themed background with overlay gradients.
+* **Asymmetric Content Grids:** Complex, mixed-content grid layouts (like the "Editor's Picks" section) balance dominant lead stories against dense, vertically scrollable lists of secondary updates to maximize information density without clutter.
+* **Live Radio Integration:** A dedicated interaction point in the command center allowing users to stream live audio coverage.
 
-3. **Run Database Migrations**:  
-   ```bash  
-   python manage.py migrate  
+## 🧠 Site Architecture
+Beyond the dedicated news hubs, the platform includes essential structural architecture to support a professional publication:
+* **Home:** The core command center featuring the ticker, mixed-category grids, and the primary content layouts.
+* **About Us:** A foundational page detailing the publication's mission, editorial standards, and organizational structure.
+* **Contact Us:** A user engagement portal for press inquiries, reader feedback, and tip submissions.
+
+## 🛠️ Technical Stack
+* **Markup:** Semantic HTML5 (Optimized for accessibility and structural logical flow)
+* **Styling:** Advanced CSS3 (Extensive use of CSS Grid and Flexbox for responsive layouts)
+* **Interactivity:** Vanilla JavaScript (ES6) for DOM manipulation and interactive elements like the news ticker.
+* **Dependencies:** Zero (100% custom-written architecture).
+
+---
+*Developed by [Emad Wagih] — Frontend Web Developer*

@@ -65,9 +65,9 @@
     background-color: #000;
     border-radius: 20px;
     margin: 30px 20px;
-    padding: 20px 0;
+    padding: 60px 0;
     text-align: center;
-    width: calc(80% / 2 - 20px);
+    width: 60%;
     transition: transform .6s ease;
 }
 
@@ -77,16 +77,16 @@
 
 .team .team-container .team-card .team-person img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     box-shadow: 0 0 20px var(--mainColor);
 }
 
 .team .team-container .team-card .team-info h3 {
     color: #D7D7D7;
-    font-size: 20px;
+    font-size: 40px;
     margin: 15px 0;
     text-shadow: 0 0 10px #D7D7D7;
 }
