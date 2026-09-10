@@ -2,6 +2,8 @@
 
 > **Live Demo:** [https://trojanx.vercel.app]
 
+![TrojanX Preview](./Media/preview.png)
+
 TrojanX is a comprehensive, multi-category digital news platform designed to deliver real-time global updates across diverse sectors. Engineered as a full-scale publication portal, the platform manages high volumes of distinct content types—from breaking geopolitical headlines to deep-dive aerospace features—while maintaining a cohesive and highly navigable user experience. Built entirely with vanilla web technologies, this project demonstrates a strong command of native CSS layout architecture, semantic HTML5, and core DOM manipulation without the use of external frameworks.
 
 ## 🍽️ The Content Ecosystem
